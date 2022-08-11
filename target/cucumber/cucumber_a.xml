@@ -1,31 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="268.389">
-    <testcase classname="Base Functionality For Import Wizard Mapping" name="Mapping imported columns to Tool Name format" time="268.187">
-        <system-out>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="78.372">
+    <testcase classname="Base Functionality For Export Wizard Page" name="Login and verify Export Page Tab order" time="78.202">
+        <failure message="" type="java.lang.AssertionError">
             <![CDATA[Given user logged in TacoUI with "IM" credentials...........................passed
 When user clicks ImplementaionMgmt icon.....................................passed
-Then user will land "im-tool" page..........................................passed
-Then user clicks Project Status dropdown....................................passed
-Then select 'NotProcessed' project status...................................passed
-Then user click import button...............................................passed
-Then user click browse button...............................................passed
-Then user click update button...............................................passed
-Then user clicks Production Drug dropdown...................................passed
-Then select 'Product Name' from drug dropdown...............................passed
-Then user clicks NDC from Drug dropdown.....................................passed
-Then select 'NDC11' NDC from drug dropdown..................................passed
-Then user clicks Rx from drug dropdown......................................passed
-Then select 'Rx Count' Rx from drug dropdown................................passed
-Then user click next button.................................................passed
-Then user should select device type dropdown................................passed
-Then select "Max 2 110/44/2=156" device option..............................passed
-Then user select standard radio button......................................passed
-Then user checked exclude drug button.......................................passed
-Then user checked exclude schedule button...................................passed
-Then user checked exclude unit of usage button..............................passed
-Then user checked exclude schedule button1..................................passed
-Then user select unit of age radio button...................................passed
+Then user will land the "https://frontend.stg.tacodevdomain.com/im-tool/export/6a5f46d4-86ac-4e09-8587-eaee9e9db434" page.failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at com.parata.steps.ExportPageSteps.userWillLandExportPage(ExportPageSteps.java:27)
+	at ✽.user will land the "https://frontend.stg.tacodevdomain.com/im-tool/export/6a5f46d4-86ac-4e09-8587-eaee9e9db434" page(file:///E:/work/PmRpoProject/src/test/resources/features/ImplementaionMgmt/ExportWizard.feature:8)
 ]]>
-        </system-out>
+        </failure>
     </testcase>
 </testsuite>
