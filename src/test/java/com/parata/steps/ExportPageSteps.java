@@ -20,11 +20,51 @@ public class ExportPageSteps extends AutomationBase{
     ExportPage exportPage = new ExportPage(openDriver());
     SmartWait smartWait = new SmartWait();
 
-    @When("user will land the {string} page")
-    public void userWillLandExportPage(String url_part) {
-        String landingUrl = openDriver().getCurrentUrl();
-        System.out.println(landingUrl);
-        Assert.assertTrue(landingUrl.contains(url_part));
-        smartWait.waitUntilPageIsLoaded(50);
+//    @When("user will land the {string} page")
+//    public void userWillLandExportPage(String url_part) {
+//        String landingUrl = openDriver().getCurrentUrl();
+//        System.out.println(landingUrl);
+//        Assert.assertTrue(landingUrl.contains(url_part));
+//        smartWait.waitUntilPageIsLoaded(50);
+//    }
+
+    @Then("click not available tab")
+    public void clickNotAvailabletab() throws InterruptedException{
+        exportPage.userclickedNotAvailableTab();
+        smartWait.waitUntilPageIsLoaded(60);
+    }
+    @Then("click Excluded tab")
+    public void clickExcludedtab() throws InterruptedException{
+        exportPage.userclickedExcludedTab();
+        smartWait.waitUntilPageIsLoaded(60);
+    }
+    @Then("click not oral solid tab")
+    public void clickNotOralSolidtab() throws InterruptedException{
+        exportPage.userclickedNotOralSolid();
+        smartWait.waitUntilPageIsLoaded(60);
+    }
+
+    @Then("click analysis tab")
+    public void clickAnalysistab() throws InterruptedException{
+        exportPage.userClickedAnalysis();
+        smartWait.waitUntilPageIsLoaded(60);
+    }
+
+    @Then("click gnc button")
+    public void clickGncButton() throws InterruptedException{
+        exportPage.userClickedGcnLink();
+        smartWait.waitUntilPageIsLoaded(60);
+    }
+
+    @Then("click check duplicate drug1")
+    public void checkDuplicateDrug1() throws InterruptedException{
+        exportPage.userCheckedDuplicate1();
+        smartWait.waitUntilPageIsLoaded(60);
+    }
+
+    @Then("click confirm button")
+    public void clickedConfirmButton() throws InterruptedException{
+        exportPage.userClickedConfirmButton();
+        smartWait.waitUntilPageIsLoaded(60);
     }
 }

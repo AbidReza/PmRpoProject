@@ -16,8 +16,26 @@ import org.openqa.selenium.support.ui.Select;
 
 public class ExportPage extends CommonPageMethods{
 
-    @FindBy(how = How.XPATH, using = ("//*[@id=\"D-MnuImTool\"]/a"))
-    public WebElement btnImplementationMgt;
+    @FindBy(how = How.ID, using = ("mat-tab-label-0-1"))
+    public WebElement tabNotAvailableTab;
+
+    @FindBy(how = How.ID, using = ("mat-tab-label-0-2"))
+    public WebElement tabExcluded;
+
+    @FindBy(how = How.ID, using = ("mat-tab-label-0-3"))
+    public WebElement tabNotOralSolid;
+
+    @FindBy(how = How.ID, using = ("mat-tab-label-0-0"))
+    public WebElement tabAnalysis;
+
+    @FindBy(how=How.XPATH, using=("/html/body/app-root/div/ng-sidebar-container/div/div/div/mat-sidenav-container/mat-sidenav-content/div/div/app-customer-drug-list/app-card/div/div[2]/section/div[1]/div/div[2]/span"))
+    public  WebElement btnGcn;
+
+    @FindBy(how = How.ID, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[12]/td[1]/mat-checkbox/label/span[1]"))
+    public WebElement chkDrug1;
+
+    @FindBy(how = How.ID,using =("Confirm"))
+    public WebElement btnConfirm;
 
 
 
@@ -26,6 +44,32 @@ public class ExportPage extends CommonPageMethods{
     public ExportPage(WebDriver webDriver) {
         this.webDriver = webDriver;
         PageFactory.initElements(webDriver, this);
+    }
+
+    public void userclickedNotAvailableTab() throws InterruptedException {
+        click(tabNotAvailableTab);
+    }
+
+    public void userclickedExcludedTab() throws InterruptedException {
+        click(tabExcluded);
+    }
+
+    public void userclickedNotOralSolid() throws InterruptedException {
+        click(tabNotOralSolid);
+    }
+
+    public void userClickedAnalysis()throws InterruptedException{
+        click(tabAnalysis);
+    }
+    public void userClickedGcnLink()throws InterruptedException{
+        click(btnGcn);
+    }
+public void userCheckedDuplicate1()throws  InterruptedException{
+        click(chkDrug1);
+}
+
+    public void userClickedConfirmButton()throws  InterruptedException{
+        click(btnConfirm);
     }
 
 }
