@@ -36,14 +36,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="D:/PMToolSeleniumTesting" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\work\PmRpoProject\src\test\resources\Features\ImplementaionMgmt" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Login and verify Export Page Tab order">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Login to Taco UI with PM credentials">
     <configuration name="Scenario: Login and verify Export Page Tab order" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/ImplementaionMgmt/ExportWizard.feature" />
@@ -64,15 +64,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Mapping imported columns to Tool Name format (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Login to Taco UI with PM credential" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/ImplementaionMgmt/ImportWizerdMapImported.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/PmLogin/PmToolLogin.feature" />
       <option name="GLUE" value="com.parata.steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="PmRpoProject" />
-      <option name="NAME_FILTER" value="^Mapping imported columns to Tool Name format$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Mapping imported columns to Tool Name format$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Mapping imported columns to Tool Name format" />
+      <option name="NAME_FILTER" value="^Login to Taco UI with PM credential$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Login to Taco UI with PM credential$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Login to Taco UI with PM credential" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Login to Taco UI with PM credentials" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/PmLogin/PmToolLogin.feature" />
+      <option name="GLUE" value="com.parata.steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="PmRpoProject" />
+      <option name="NAME_FILTER" value="^Login to Taco UI with PM credentials$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Login to Taco UI with PM credentials$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Login to Taco UI with PM credentials" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -104,21 +124,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BTestRunner (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="PmRpoProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Runner.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Runner" />
-      <option name="MAIN_CLASS_NAME" value="Runner.BTestRunner" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CTestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PmRpoProject" />
       <extension name="coverage">
@@ -136,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: Login and verify Export Page Tab order" />
-        <item itemvalue="Cucumber Java.Scenario: Selected Project Status Should Be Reflect In Filtered Area With Search" />
+        <item itemvalue="Cucumber Java.Scenario: Login to Taco UI with PM credentials" />
         <item itemvalue="JUnit.CTestRunner" />
-        <item itemvalue="Cucumber Java.Scenario: Mapping imported columns to Tool Name format (1)" />
-        <item itemvalue="JUnit.BTestRunner (1)" />
+        <item itemvalue="Cucumber Java.Scenario: Login and verify Export Page Tab order" />
+        <item itemvalue="Cucumber Java.Scenario: Login to Taco UI with PM credential" />
+        <item itemvalue="Cucumber Java.Scenario: Selected Project Status Should Be Reflect In Filtered Area With Search" />
       </list>
     </recent_temporary>
   </component>
@@ -169,19 +174,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/com/parata/steps/ImplementationMPageSteps.java</url>
-          <line>36</line>
-          <properties class="com.parata.steps.ImplementationMPageSteps" method="userWillLandPage">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

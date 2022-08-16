@@ -32,5 +32,11 @@ Feature: Base Functionality For Export Wizard Page
     Then click not oral solid tab
     Then click analysis tab
     Then click gnc button
-    Then click check duplicate drug1
-    Then  click confirm button
+    Then click check duplicate drugs
+    Then click confirm button
+    Then click cddb button
+    Then user enters "FACE MASK" drug name into the search bar
+    Then user checked drug name form list
+    Then click add button
+    Then click gnc button for export
+    Then click export button
