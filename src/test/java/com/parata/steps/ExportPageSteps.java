@@ -20,27 +20,12 @@ public class ExportPageSteps extends AutomationBase{
     ExportPage exportPage = new ExportPage(openDriver());
     SmartWait smartWait = new SmartWait();
 
-    @Then("click not available tab")
+    @Then("user click all tabs")
     public void clickNotAvailabletab() throws InterruptedException{
-        exportPage.userclickedNotAvailableTab();
-        smartWait.waitUntilPageIsLoaded(15);
-    }
-    @Then("click Excluded tab")
-    public void clickExcludedtab() throws InterruptedException{
-        exportPage.userclickedExcludedTab();
-        smartWait.waitUntilPageIsLoaded(15);
-    }
-    @Then("click not oral solid tab")
-    public void clickNotOralSolidtab() throws InterruptedException{
-        exportPage.userclickedNotOralSolid();
+        exportPage.userclickedAllTab();
         smartWait.waitUntilPageIsLoaded(15);
     }
 
-    @Then("click analysis tab")
-    public void clickAnalysistab() throws InterruptedException{
-        exportPage.userClickedAnalysis();
-        smartWait.waitUntilPageIsLoaded(15);
-    }
 
     @Then("click gnc button")
     public void clickGncButton() throws InterruptedException{
@@ -71,6 +56,11 @@ public class ExportPageSteps extends AutomationBase{
         exportPage.enterSearchDrugName(drugName);
         smartWait.waitUntilPageIsLoaded(20);
     }
+    @Then("click pagination button")
+    public void clickedPaginationButton() throws InterruptedException{
+        exportPage.clickPagination();
+        smartWait.waitUntilPageIsLoaded(15);
+    }
 
     @Then("user checked drug name form list")
     public void checkDrugNameList() throws InterruptedException{
@@ -78,21 +68,78 @@ public class ExportPageSteps extends AutomationBase{
         smartWait.waitUntilPageIsLoaded(20);
     }
 
-    @Then("click add button")
+    @Then("click to add for drug list")
     public void clickedAddButton() throws InterruptedException{
         exportPage.userClickedBtnAdd();
         smartWait.waitUntilPageIsLoaded(15);
     }
 
-    @Then("click gnc button for export")
-    public void clickGncButtonForExport() throws InterruptedException{
-        exportPage.userClickedGcnLink();
+    @Then("click ok button")
+    public void clickedOkButton() throws InterruptedException{
+        exportPage.userClickedBtnOk();
         smartWait.waitUntilPageIsLoaded(15);
     }
 
-    @Then("click export button")
-    public void clickExportButton() throws InterruptedException{
-        exportPage.userClickedBtnExport();
+//    @Then("click gnc button for export")
+//    public void clickGncButtonForExport() throws InterruptedException{
+//        exportPage.userClickedGcnLink();
+//        smartWait.waitUntilPageIsLoaded(15);
+//    }
+
+    @Then("user checked drug name")
+    public void checkDrugName() throws InterruptedException{
+        exportPage.userCheckedDrugName();
+        smartWait.waitUntilPageIsLoaded(20);
+    }
+
+    @Then("user clicked remove button")
+    public void userClickRemoveButton() throws InterruptedException{
+        exportPage.userClickedBtnRemove();
         smartWait.waitUntilPageIsLoaded(15);
     }
+
+    @Then("user clicked remove confirm button")
+    public void userClickRemoveConfirmButton() throws InterruptedException{
+        exportPage.userClickedBtnRemoveConfirm();
+        smartWait.waitUntilPageIsLoaded(15);
+    }
+
+    @Then("user select again checked drug name")
+    public void userSelectAgainCheckedDrugName() throws InterruptedException{
+        exportPage.userCheckedDrugNameAgain();
+        smartWait.waitUntilPageIsLoaded(20);
+    }
+
+    @Then("user select cell location dropdown")
+    public void userClickCellLocationDropdown() throws InterruptedException{
+        exportPage.userSelectCellLocationDropdown();
+        smartWait.waitUntilPageIsLoaded(15);
+    }
+
+    @Then("user select cell location option")
+    public void userClickCellLocationOption() throws InterruptedException{
+        exportPage.userSelectCallLocationDropDownOption();
+        smartWait.waitUntilPageIsLoaded(15);
+    }
+
+    @Then("click pen option")
+    public void clickPenButton() throws InterruptedException{
+        exportPage.userClickedBtnPenOption();
+        smartWait.waitUntilPageIsLoaded(15);
+    }
+
+
+//    @Then("click export button")
+//    public void clickExportButton() throws InterruptedException{
+//        exportPage.userClickedBtnExport();
+//        smartWait.waitUntilPageIsLoaded(15);
+//    }
+//
+//    @Then("click export confirm button")
+//    public void clickExportConfirmButton() throws InterruptedException{
+//        exportPage.userClickedBtnExportConfirm();
+//        smartWait.waitUntilPageIsLoaded(15);
+//    }
+
+
 }

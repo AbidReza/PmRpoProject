@@ -112,20 +112,45 @@ public class ExportPage extends CommonPageMethods{
     @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-cddb/div/div/mat-dialog-content/div[1]/div/div/input"))
     public WebElement searchDrugInput;
 
+    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-cddb/div/mat-dialog-actions/div[1]/mat-paginator/div/div/div[2]/button[2]/span[1]"))
+    public WebElement btnPagination;
+
     @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-cddb/div/div/mat-dialog-content/div[2]/table[1]/tbody/tr[1]/td[1]/mat-checkbox/label/span[1]"))
     public WebElement chkDrugListName1;
 
-    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-cddb/div/div/mat-dialog-content/div[2]/table[1]/tbody/tr[2]/td[1]/mat-checkbox/label/span[1]"))
-    public WebElement chkDrugListName2;
-
-    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-cddb/div/div/mat-dialog-content/div[2]/table[1]/tbody/tr[3]/td[1]/mat-checkbox/label/span[1]"))
-    public WebElement chkDrugListName3;
-
     @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-cddb/div/div/mat-dialog-content/div[1]/button"))
-    public WebElement btnAdd;
+    public WebElement btnAddToDrugList;
 
-    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/mat-dialog-actions/button[3]"))
-    public WebElement btnExport;
+    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-cddb/div/mat-dialog-actions/div[2]/button"))
+    public WebElement btnOk;
+
+    @FindBy(how = How.XPATH, using = ("/html/body/app-root/div/ng-sidebar-container/div/div/div/mat-sidenav-container/mat-sidenav-content/div/div/app-customer-drug-list/app-card/div/div[2]/section/div[2]/mat-tab-group/div/mat-tab-body[1]/div/div/table[1]/tbody/tr[1]/td[1]/mat-checkbox/label/span[1]"))
+    public WebElement chkDrugName;
+
+    @FindBy(how = How.XPATH, using = ("//*[@id=\"remove_celllocation\"]"))
+    public WebElement btnRemove;
+
+    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-alert-wizard/mat-dialog-actions/button[2]"))
+    public WebElement btnRemoveConfirm;
+
+    @FindBy(how = How.XPATH, using = ("/html/body/app-root/div/ng-sidebar-container/div/div/div/mat-sidenav-container/mat-sidenav-content/div/div/app-customer-drug-list/app-card/div/div[2]/section/div[2]/mat-tab-group/div/mat-tab-body[1]/div/div/table[1]/tbody/tr[1]/td[1]/mat-checkbox/label/span[1]"))
+    public WebElement chkDrugNameAgain;
+
+    @FindBy(how = How.XPATH, using = ("//*[@id=\"mat-select-458\"]"))
+    public WebElement dropdownCellLocation;
+
+    @FindBy(how = How.XPATH, using = ("////*[@id=\"mat-option-4\"]"))
+    public WebElement selectDropdownOption;
+
+
+    @FindBy(how = How.XPATH, using = ("//*[@id=\"matTable\"]/thead/tr/th[23]/mat-icon/img"))
+    public WebElement btnPenOption;
+
+//    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/mat-dialog-actions/button[3]"))
+//    public WebElement btnExport;
+//
+//    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[4]/div/mat-dialog-container/app-alert-wizard/mat-dialog-actions/button[2]"))
+//    public WebElement btnConfirmExport;
 
     WebDriver webDriver;
 
@@ -134,21 +159,13 @@ public class ExportPage extends CommonPageMethods{
         PageFactory.initElements(webDriver, this);
     }
 
-    public void userclickedNotAvailableTab() throws InterruptedException {
+    public void userclickedAllTab() throws InterruptedException {
         click(tabNotAvailableTab);
-    }
-
-    public void userclickedExcludedTab() throws InterruptedException {
         click(tabExcluded);
-    }
-
-    public void userclickedNotOralSolid() throws InterruptedException {
         click(tabNotOralSolid);
-    }
-
-    public void userClickedAnalysis()throws InterruptedException{
         click(tabAnalysis);
     }
+
     public void userClickedGcnLink()throws InterruptedException{
         click(btnGcn);
     }
@@ -190,18 +207,58 @@ public class ExportPage extends CommonPageMethods{
         searchDrugInput.sendKeys(drugName);
     }
 
+    public void clickPagination()throws  InterruptedException {
+        click(btnPagination);
+
+    }
+
     public void userCheckDrugList()throws  InterruptedException {
         click(chkDrugListName1);
-        click(chkDrugListName2);
-        click(chkDrugListName3);
+
     }
 
     public void userClickedBtnAdd()throws  InterruptedException{
-        click(btnAdd);
+        click(btnAddToDrugList);
     }
 
-    public void userClickedBtnExport()throws  InterruptedException{
-        click(btnExport);
+    public void userClickedBtnOk()throws  InterruptedException{
+        click(btnOk);
     }
+
+    public void userCheckedDrugName()throws  InterruptedException {
+        click(chkDrugName);
+    }
+
+    public void userClickedBtnRemove()throws  InterruptedException{
+        click(btnRemove);
+    }
+
+    public void userClickedBtnRemoveConfirm()throws  InterruptedException{
+        click(btnRemoveConfirm);
+    }
+
+    public void userCheckedDrugNameAgain()throws  InterruptedException{
+        click(chkDrugNameAgain);
+    }
+
+    public void userSelectCellLocationDropdown() throws InterruptedException {
+        click(dropdownCellLocation);
+    }
+
+    public void userSelectCallLocationDropDownOption() throws InterruptedException {
+        click(selectDropdownOption);
+    }
+
+    public void userClickedBtnPenOption()throws  InterruptedException{
+        click(btnPenOption);
+    }
+
+//    public void userClickedBtnExport()throws  InterruptedException{
+//        click(btnExport);
+//    }
+//
+//    public void userClickedBtnExportConfirm()throws  InterruptedException{
+//        click(btnConfirmExport);
+//    }
 
 }

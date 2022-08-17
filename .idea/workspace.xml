@@ -10,6 +10,9 @@
       <change beforePath="$PROJECT_DIR$/src/test/java/com/parata/steps/ExportPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/parata/steps/ExportPageSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/Features/ImplementaionMgmt/ExportWizard.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/ImplementaionMgmt/ExportWizard.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/LoginandverifyExportPageTaborder_fail.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/LoginandverifyExportPageTaborder_fail.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Features/ImplementaionMgmt/ExportWizard.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Features/ImplementaionMgmt/ExportWizard.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/parata/pages/ExportPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/parata/pages/ExportPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/parata/steps/ExportPageSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/parata/steps/ExportPageSteps.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +46,7 @@
       <recent name="E:\work\PmRpoProject\src\test\resources\Features\ImplementaionMgmt" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Login to Taco UI with PM credentials">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Login and verify Export Page Tab order">
     <configuration name="Scenario: Login and verify Export Page Tab order" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/ImplementaionMgmt/ExportWizard.feature" />
@@ -141,9 +144,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Login and verify Export Page Tab order" />
         <item itemvalue="Cucumber Java.Scenario: Login to Taco UI with PM credentials" />
         <item itemvalue="JUnit.CTestRunner" />
-        <item itemvalue="Cucumber Java.Scenario: Login and verify Export Page Tab order" />
         <item itemvalue="Cucumber Java.Scenario: Login to Taco UI with PM credential" />
         <item itemvalue="Cucumber Java.Scenario: Selected Project Status Should Be Reflect In Filtered Area With Search" />
       </list>

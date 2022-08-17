@@ -27,16 +27,21 @@ Feature: Base Functionality For Export Wizard Page
     Then user checked exclude schedule button1
     Then user select unit of age radio button
     Then user click wizard import button
-    Then click not available tab
-    Then click Excluded tab
-    Then click not oral solid tab
-    Then click analysis tab
+    Then user click all tabs
     Then click gnc button
     Then click check duplicate drugs
     Then click confirm button
     Then click cddb button
-    Then user enters "FACE MASK" drug name into the search bar
+    Then user enters "FACE" drug name into the search bar
+    Then click pagination button
     Then user checked drug name form list
-    Then click add button
-    Then click gnc button for export
-    Then click export button
+    Then click to add for drug list
+    Then click ok button
+    Then user checked drug name
+    Then user clicked remove button
+    Then user clicked remove confirm button
+    Then user select again checked drug name
+    Then user select cell location dropdown
+
+
+
