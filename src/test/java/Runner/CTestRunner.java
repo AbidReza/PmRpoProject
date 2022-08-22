@@ -4,10 +4,7 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
-/**
- * @author MFU
- * 1/7/2021
- */
+
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "src/test/resources/features/",
@@ -18,5 +15,7 @@ import org.junit.runner.RunWith;
                 "json:target/cucumber/cucumber_a.json",
                 "junit:target/cucumber/cucumber_a.xml"})
 
-public class CTestRunner {
+public class CTestRunner
+{
+
 }

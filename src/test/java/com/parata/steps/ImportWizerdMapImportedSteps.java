@@ -32,10 +32,15 @@ public class ImportWizerdMapImportedSteps extends AutomationBase {
         smartWait.waitUntilPageIsLoaded(20);
     }
 
-    @Then("user click update button")
+    @When("user click update button")
     public void clickUploadButton() throws InterruptedException{
         importWizerdMapImportedPage.userclickedUploadButton();
         smartWait.waitUntilPageIsLoaded(90);
+    }
+
+    @Then("user should receive file successfully uploaded message")
+    public void userShouldReceiveSuccessfullyUpload() throws InterruptedException {
+
     }
 
     @Then("user clicks Production Drug dropdown")
@@ -77,12 +82,22 @@ public class ImportWizerdMapImportedSteps extends AutomationBase {
         smartWait.waitUntilPageIsLoaded(10);
     }
 
+//    @Then("user select unit usage radio button")
+//    public void userSelectUnitUsageRadioButton() throws InterruptedException {
+//        importWizerdMapImportedPage.btnRadioUnitUsage();
+//        smartWait.waitUntilPageIsLoaded(15);
+//    }
+//
+//    @Then("user select number of order radio button")
+//    public void userSelectNumberOfOrderRadioButton() throws InterruptedException {
+//        importWizerdMapImportedPage.btnRadioUnitUsage();
+//        smartWait.waitUntilPageIsLoaded(15);
+//    }
     @Then("user click next button")
     public void userClicksNextButton() throws InterruptedException {
         importWizerdMapImportedPage.userclickedNextButton();
         smartWait.waitUntilPageIsLoaded(10);
     }
-
     @Then("user should select device type dropdown")
     public void userShouldSelectDeviceType() throws InterruptedException {
         importWizerdMapImportedPage.selectDeviceType();
@@ -102,7 +117,7 @@ public class ImportWizerdMapImportedSteps extends AutomationBase {
         smartWait.waitUntilPageIsLoaded(15);
     }
 
-    @Then("user checked exclude drug button")
+    @Then("user checked exclude button")
     public void userCheckdExcludeDrugButton() throws InterruptedException {
         importWizerdMapImportedPage.chkExcludeDrug();
         smartWait.waitUntilPageIsLoaded(15);
@@ -114,11 +129,6 @@ public class ImportWizerdMapImportedSteps extends AutomationBase {
         smartWait.waitUntilPageIsLoaded(15);
     }
 
-    @Then("user checked exclude unit of usage button")
-    public void userCheckdchkExcludeUnitOfUsageButton() throws InterruptedException {
-        importWizerdMapImportedPage.chkExcludeUnitOfUsage();
-        smartWait.waitUntilPageIsLoaded(15);
-    }
 
     @Then("user checked exclude schedule button1")
     public void userCheckdExcludeScheduleButton1() throws InterruptedException {
@@ -126,11 +136,49 @@ public class ImportWizerdMapImportedSteps extends AutomationBase {
         smartWait.waitUntilPageIsLoaded(15);
     }
 
-    @Then("user select unit of age radio button")
-    public void userSelectUnitOfAgeRadioButton() throws InterruptedException {
-        importWizerdMapImportedPage.btnRadioUnitAge();
+    @Then("user checked exclude drug button")
+    public void userCheckdExcludeDrugButton2() throws InterruptedException {
+        importWizerdMapImportedPage.chkExcludeDrug2();
         smartWait.waitUntilPageIsLoaded(15);
     }
+
+    @Then("user checked exclude unit of usage button")
+    public void userCheckedExcludeUsage() throws InterruptedException {
+        importWizerdMapImportedPage.chkExcludeUsage();
+        smartWait.waitUntilPageIsLoaded(15);
+    }
+
+    @Then("user checked antineoplastic button")
+    public void userCheckedAntineoplastic() throws InterruptedException {
+        importWizerdMapImportedPage.chkAntineoPlastic();
+        smartWait.waitUntilPageIsLoaded(15);
+    }
+
+    @Then("user click Analyze button")
+    public void clickAnalyzeButton() throws InterruptedException{
+        importWizerdMapImportedPage.userclickedAnalyzeButton();
+        smartWait.waitUntilPageIsLoaded(60);
+    }
+
+//    @Then("user select unit of age radio button")
+//    public void userSelectUnitOfAgeRadioButton() throws InterruptedException {
+//        importWizerdMapImportedPage.btnRadioUnitAge();
+//        smartWait.waitUntilPageIsLoaded(15);
+//    }
+
+    @Then("user should select sub device type dropdown")
+    public void userShouldSelectSubDeviceType() throws InterruptedException {
+        importWizerdMapImportedPage.selectSubDeviceType();
+        smartWait.waitUntilPageIsLoaded(10);
+    }
+
+    @Then("user select {string} sub device option")
+    public void selectSubDeviceOption(String arg0) throws InterruptedException {
+        Utility.dropdownCount(openDriver(), ".mat-option>span");
+        importWizerdMapImportedPage.selectSubDeviceOption();
+        smartWait.waitUntilPageIsLoaded(15);
+    }
+
 
     @Then("user click wizard import button")
     public void clickWizardImportButton() throws InterruptedException{

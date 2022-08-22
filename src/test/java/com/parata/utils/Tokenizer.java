@@ -55,8 +55,8 @@ public class Tokenizer extends AutomationBase {
                         .client_secret("k_sXqy-buOoFqHd_bd-eS_gHe1wFIE58C5b32LD1zqEkelm0SFv5vFcQuu8rTNXZ")
                         .audience("https://m2maspnet/api")
                         .grant_type("http://auth0.com/oauth/grant-type/password-realm")
-                        .username("testuser_admin@parataqa.com")
-                        .password("everyA@09").realm("parata-auth").build();
+                        .username("vdr_ssayeem@parata.com")
+                        .password("1010997637@Hydrus2").realm("parata-auth").build();
                 requestSpec = getSpec("production_Dev_Token", Boolean.parseBoolean("false"));
                 System.out.println("DEV");
         }

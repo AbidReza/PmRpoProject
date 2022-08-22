@@ -33,9 +33,6 @@ public class ImplementationMPage extends CommonPageMethods {
     @FindBy(how = How.ID, using = ("search_customers"))
     public WebElement inputCustomerNumber;
 
-
-
-
     WebDriver webDriver;
 
     public ImplementationMPage(WebDriver webDriver) {

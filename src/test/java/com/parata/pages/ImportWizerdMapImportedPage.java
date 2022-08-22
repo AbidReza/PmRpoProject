@@ -17,13 +17,13 @@ import org.openqa.selenium.support.ui.Select;
 public class ImportWizerdMapImportedPage extends CommonPageMethods{
 
 
-    @FindBy(how = How.XPATH, using = ("//*[@id=\"add_site\"]"))
+    @FindBy(how = How.XPATH, using = ("/html/body/app-root/div/ng-sidebar-container/div/div/div/mat-sidenav-container/mat-sidenav-content/div/div/app-im-tool/app-pm-customer-management/app-card/div/div[2]/section/div[2]/table[1]/tbody/tr[1]/td[9]/button"))
     public WebElement btnImport;
 
     @FindBy(how = How.ID, using = ("fileDropRef"))
     public WebElement btnBrowse;
 
-    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-one/div/div/div/div[2]/button"))
+    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard/div/div/div/div/div[2]/button"))
     public WebElement btnUpload;
 
     @FindBy(how = How.XPATH, using = ("//*[@id=\"mat-select-6\"]"))
@@ -44,13 +44,19 @@ public class ImportWizerdMapImportedPage extends CommonPageMethods{
     @FindBy(how = How.XPATH, using = ("//*[@id=\"mat-option-24\"]"))
     public WebElement btnRxName;
 
-    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-one/div/form/mat-dialog-actions/button[2]"))
+//    @FindBy(how = How.ID, using = ("mat-radio-13"))
+//    public WebElement rbtUnitUsage1;
+//
+//    @FindBy(how = How.ID, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard/div/div/form/mat-dialog-content/div[5]/span[2]/mat-radio-group/mat-radio-button[1]/label/span[1]/span[1]"))
+//    public WebElement rbtNumberOrder1;
+
+    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard/div/div/form/mat-dialog-actions/button[2]"))
     public WebElement btnNext;
 
     @FindBy(how = How.XPATH, using = ("//*[@id=\"mat-select-16\"]"))
     public WebElement dropdownDeviceType;
 
-    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[4]/div/div/div/div[2]/div/mat-option[1]"))
+    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[4]/div/div/div/mat-option[1]"))
     public WebElement btnOption1;
 
     @FindBy(how = How.ID, using = ("mat-radio-2"))
@@ -62,14 +68,29 @@ public class ImportWizerdMapImportedPage extends CommonPageMethods{
     @FindBy(how = How.XPATH, using = ("//*[@id=\"mat-checkbox-2\"]/label/span[1]"))
     public WebElement btnChkExcludeSchedule;
 
-    @FindBy(how = How.XPATH, using = ("//*[@id=\"mat-checkbox-3\"]/label/span[1]"))
-    public WebElement btnChkExcludeUnitofusage;
-
     @FindBy(how = How.XPATH, using = ("//*[@id=\"mat-checkbox-4\"]/label/span[1]"))
     public WebElement btnChkExcludeSchedule1;
 
-    @FindBy(how = How.XPATH, using = ("//*[@id=\"mat-radio-5\"]/label/span[1]"))
-    public WebElement btnRadioUnitAge;
+    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard/div/div/form/div/mat-dialog-content/div[2]/div[3]/div[1]/mat-checkbox/label/span[1]"))
+    public WebElement btnChkExcludeSchedule2;
+
+    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard/div/div/form/div/mat-dialog-content/div[2]/div[4]/div[1]/mat-checkbox/label/span[1]"))
+    public WebElement btnChkExcludeUsage;
+
+    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard/div/div/form/div/mat-dialog-content/div[2]/div[3]/div[2]/mat-checkbox[1]/label/span[1]"))
+    public WebElement btnChkAntioplastic;
+
+    @FindBy(how=How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard/div/div/form/div/mat-dialog-content/div[3]/div[1]/button"))
+    public WebElement btnAnalyze;
+
+//    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard/div/div/form/div/mat-dialog-content/div[2]/div[4]/div[2]/mat-radio-group/mat-radio-button[2]/label/span[1]/span[1]"))
+//    public WebElement btnRadioUnitAge;
+
+    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard/div/div/form/div/mat-dialog-content/div[3]/div[3]/mat-form-field/div/div[1]/div/mat-select"))
+    public WebElement dropdownSubDevice;
+
+    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[4]/div/div/div/mat-option[2]"))
+    public WebElement btnFullMainFold;
 
     @FindBy(how=How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-one/div/form/mat-dialog-actions/button[3]"))
     public WebElement btnWizardImport;
@@ -117,6 +138,14 @@ public class ImportWizerdMapImportedPage extends CommonPageMethods{
         click(btnRxName);
     }
 
+//    public void btnRadioUnitUsage() throws InterruptedException {
+//        click(rbtUnitUsage1);
+//    }
+//
+//    public void btnRadioNumberOfOrder() throws InterruptedException {
+//        click(rbtNumberOrder1);
+//    }
+
     public void userclickedNextButton() throws InterruptedException {
         click(btnNext);
     }
@@ -141,18 +170,40 @@ public class ImportWizerdMapImportedPage extends CommonPageMethods{
         click(btnChkExcludeSchedule);
     }
 
-    public void chkExcludeUnitOfUsage () throws InterruptedException {
-        click(btnChkExcludeUnitofusage);
-    }
 
     public void chkExcludeSchedule1 () throws InterruptedException {
         click(btnChkExcludeSchedule1);
     }
 
-    public void btnRadioUnitAge() throws InterruptedException {
-        click(btnRadioUnitAge);
+    public void chkExcludeDrug2() throws InterruptedException {
+        click(btnChkExcludeSchedule2);
     }
 
+    public void chkExcludeUsage() throws InterruptedException {
+        click(btnChkExcludeUsage);
+    }
+
+    public void chkAntineoPlastic() throws InterruptedException {
+        click(btnChkAntioplastic);
+    }
+
+    public void userclickedAnalyzeButton() throws InterruptedException {
+        click(btnAnalyze);
+    }
+
+    public void selectSubDeviceType() throws InterruptedException {
+        click(dropdownSubDevice);
+    }
+
+    public void selectSubDeviceOption() throws InterruptedException {
+        click(btnFullMainFold);
+    }
+
+//    public void btnRadioUnitAge() throws InterruptedException {
+//        click(btnRadioUnitAge);
+//    }
+
+///--
     public void userclickedWizardImportButton() throws InterruptedException {
         click(btnWizardImport);
     }

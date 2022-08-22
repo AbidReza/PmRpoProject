@@ -17,5 +17,6 @@ import org.junit.runner.RunWith;
         plugin = { "pretty", "html:target/cucumber/cucumber-prettya.html",
                 "json:target/cucumber/cucumber_a.json",
                 "junit:target/cucumber/cucumber_a.xml"})
-public class BTestRunner {
+public class BTestRunner{
+
 }

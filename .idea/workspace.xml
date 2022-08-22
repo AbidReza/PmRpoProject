@@ -6,13 +6,73 @@
   <component name="ChangeListManager">
     <list default="true" id="4fb3192f-47e3-43d8-8e6d-dd06e73fe550" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/parata/pages/ExportPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/parata/pages/ExportPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Runner/BTestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runner/BTestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Runner/CTestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runner/CTestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/parata/pages/ImplementationMPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/parata/pages/ImplementationMPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/parata/pages/ImportWizerdMapImportedPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/parata/pages/ImportWizerdMapImportedPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/parata/steps/ExportPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/parata/steps/ExportPageSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/parata/steps/ImplementationMPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/parata/steps/ImplementationMPageSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/parata/steps/ImportWizerdMapImportedSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/parata/steps/ImportWizerdMapImportedSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/parata/utils/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/parata/utils/Launcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/parata/utils/Tokenizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/parata/utils/Tokenizer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/Features/ImplementaionMgmt/ExportWizard.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/ImplementaionMgmt/ExportWizard.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/LoginandverifyExportPageTaborder_fail.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/LoginandverifyExportPageTaborder_fail.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/ImplementaionMgmt/ImplementionMgmt.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/ImplementaionMgmt/ImplementionMgmt.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/ImplementaionMgmt/ImportWizerdMapImported.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/ImplementaionMgmt/ImportWizerdMapImported.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/PmLogin/PmToolLogin.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/PmLogin/PmToolLogin.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/LoginandverifyExportPageTaborder_fail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/LogintoTacoUIwithPMcredential_fail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/LogintoTacoUIwithPMcredentials_fail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MappingimportedcolumnstoToolNameformat_fail.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/MappingimportedcolumnstoToolNameformat_fail.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/advanced-reports/cucumber-html-reports/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/advanced-reports/cucumber-html-reports/css/cucumber.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/advanced-reports/cucumber-html-reports/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/advanced-reports/cucumber-html-reports/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/advanced-reports/cucumber-html-reports/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/advanced-reports/cucumber-html-reports/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/advanced-reports/cucumber-html-reports/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/advanced-reports/cucumber-html-reports/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/advanced-reports/cucumber-html-reports/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/advanced-reports/cucumber-html-reports/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/advanced-reports/cucumber-html-reports/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/advanced-reports/cucumber-html-reports/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/advanced-reports/cucumber-html-reports/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/advanced-reports/cucumber-html-reports/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/advanced-reports/cucumber-html-reports/images/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/advanced-reports/cucumber-html-reports/js/Chart.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/advanced-reports/cucumber-html-reports/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/advanced-reports/cucumber-html-reports/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/advanced-reports/cucumber-html-reports/js/jquery.tablesorter.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/advanced-reports/cucumber-html-reports/js/moment.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/advanced-reports/cucumber-html-reports/overview-failures.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/advanced-reports/cucumber-html-reports/overview-features.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/advanced-reports/cucumber-html-reports/overview-steps.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/advanced-reports/cucumber-html-reports/overview-tags.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/advanced-reports/cucumber-html-reports/report-feature_140906491.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/advanced-reports/cucumber-html-reports/report-tag_2203492621.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/advanced-reports/cucumber-html-reports/report-tag_3182320184.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/advanced-reports/cucumber-html-reports/report-tag_4073810867.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/cucumber-prettya.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber/cucumber-prettya.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/cucumber_a.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber/cucumber_a.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/cucumber_a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber/cucumber_a.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-10T18-46-58_452.dumpstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-Base Functionality For Import Wizard Mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-Base Functionality For Import Wizard Mapping.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-Base Functionality for Implementation Manager.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-Base Functionality for Implementation Manager.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/taco-ui-testing.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/taco-ui-testing.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/Features/ImplementaionMgmt/ExportWizard.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Features/ImplementaionMgmt/ExportWizard.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/parata/pages/ExportPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/parata/pages/ExportPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Features/ImplementaionMgmt/ImplementionMgmt.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Features/ImplementaionMgmt/ImplementionMgmt.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Features/ImplementaionMgmt/ImportWizerdMapImported.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Features/ImplementaionMgmt/ImportWizerdMapImported.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Features/PmLogin/PmToolLogin.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Features/PmLogin/PmToolLogin.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Runner/CTestRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Runner/CTestRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/parata/pages/ImplementationMPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/parata/pages/ImplementationMPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/parata/pages/ImportWizerdMapImportedPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/parata/pages/ImportWizerdMapImportedPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/parata/steps/ExportPageSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/parata/steps/ExportPageSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/parata/steps/ImplementationMPageSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/parata/steps/ImplementationMPageSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/parata/steps/ImportWizerdMapImportedSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/parata/steps/ImportWizerdMapImportedSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/parata/utils/Launcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/parata/utils/Launcher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/parata/utils/Tokenizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/parata/utils/Tokenizer.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,23 +99,22 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/qa-stratus-frontend-master" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\work\PmRpoProject\src\test\resources\Features\ImplementaionMgmt" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Login and verify Export Page Tab order">
-    <configuration name="Scenario: Login and verify Export Page Tab order" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Login to Taco UI with PM credentials">
+    <configuration name="Feature: ExportWizard" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/ImplementaionMgmt/ExportWizard.feature" />
       <option name="GLUE" value="com.parata.steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="PmRpoProject" />
-      <option name="NAME_FILTER" value="^Login and verify Export Page Tab order$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Login and verify Export Page Tab order$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Login and verify Export Page Tab order" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: ExportWizard" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -67,15 +126,54 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Login to Taco UI with PM credential" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: ImplementionMgmt" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/PmLogin/PmToolLogin.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/ImplementaionMgmt/ImplementionMgmt.feature" />
       <option name="GLUE" value="com.parata.steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="PmRpoProject" />
-      <option name="NAME_FILTER" value="^Login to Taco UI with PM credential$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Login to Taco UI with PM credential$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Login to Taco UI with PM credential" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: ImplementionMgmt" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Login to Taco UI with IM and user should see Customer Management page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/ImplementaionMgmt/ExportWizard.feature" />
+      <option name="GLUE" value="com.parata.steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="PmRpoProject" />
+      <option name="NAME_FILTER" value="^Login to Taco UI with IM and user should see Customer Management page$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Login to Taco UI with IM and user should see Customer Management page$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Login to Taco UI with IM and user should see Customer Management page" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Login to Taco UI with IM credentials and verify Implementation page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/ImplementaionMgmt/ImplementionMgmt.feature" />
+      <option name="GLUE" value="com.parata.steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="PmRpoProject" />
+      <option name="NAME_FILTER" value="^Login to Taco UI with IM credentials and verify Implementation page$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Login to Taco UI with IM credentials and verify Implementation page$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Login to Taco UI with IM credentials and verify Implementation page" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -107,48 +205,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Selected Project Status Should Be Reflect In Filtered Area With Search" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/ImplementaionMgmt/ImplementionMgmt.feature" />
-      <option name="GLUE" value="com.parata.steps" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="PmRpoProject" />
-      <option name="NAME_FILTER" value="^Selected Project Status Should Be Reflect In Filtered Area With Search$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Selected Project Status Should Be Reflect In Filtered Area With Search$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Selected Project Status Should Be Reflect In Filtered Area With Search" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CTestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="PmRpoProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Runner.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Runner" />
-      <option name="MAIN_CLASS_NAME" value="Runner.CTestRunner" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: Login and verify Export Page Tab order" />
         <item itemvalue="Cucumber Java.Scenario: Login to Taco UI with PM credentials" />
-        <item itemvalue="JUnit.CTestRunner" />
-        <item itemvalue="Cucumber Java.Scenario: Login to Taco UI with PM credential" />
-        <item itemvalue="Cucumber Java.Scenario: Selected Project Status Should Be Reflect In Filtered Area With Search" />
+        <item itemvalue="Cucumber Java.Feature: ImplementionMgmt" />
+        <item itemvalue="Cucumber Java.Scenario: Login to Taco UI with IM credentials and verify Implementation page" />
+        <item itemvalue="Cucumber Java.Scenario: Login to Taco UI with IM and user should see Customer Management page" />
+        <item itemvalue="Cucumber Java.Feature: ExportWizard" />
       </list>
     </recent_temporary>
   </component>
@@ -177,5 +240,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/PmRpoProject$Feature__ExportWizard.ic" NAME="Feature: ExportWizard Coverage Results" MODIFIED="1661074302471" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>io.cucumber.core.cli.*</FILTER>
+    </SUITE>
   </component>
 </project>

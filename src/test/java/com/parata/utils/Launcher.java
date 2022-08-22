@@ -29,14 +29,14 @@ public class Launcher extends AutomationBase
             case "STAGING":
             case "STAG":
             case "STG":
-                webDriver.get(ConfigReader.getProperty("urlStg"));
+                webDriver.get(ConfigReader.getProperty("urlDev"));
                 break;
             case "PRODUCTION":
             case "PROD":
                 webDriver.get(ConfigReader.getProperty("urlProd"));
                 break;
             default:
-                webDriver.get(ConfigReader.getProperty("urlDev"));
+                webDriver.get(ConfigReader.getProperty("urlStg"));
         }
 
         webDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

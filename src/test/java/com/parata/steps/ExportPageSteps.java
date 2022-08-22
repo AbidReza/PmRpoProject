@@ -33,7 +33,7 @@ public class ExportPageSteps extends AutomationBase{
         smartWait.waitUntilPageIsLoaded(15);
     }
 
-    @Then("click check duplicate drugs")
+    @Then("user click to check duplicate drugs")
     public void checkDuplicateDrug() throws InterruptedException{
         exportPage.userCheckedDuplicate();
         smartWait.waitUntilPageIsLoaded(15);

@@ -28,7 +28,7 @@ public class ImplementationMPageSteps extends AutomationBase {
         testContext = context;
     }
 
-    @When("user clicks ImplementaionMgmt icon")
+    @When("user click ImplementaionMgmt icon")
     public void implementaionMgmtClicked() {
         implementationMPage.implementaionMgmtClicked();
     }
@@ -41,20 +41,25 @@ public class ImplementationMPageSteps extends AutomationBase {
         smartWait.waitUntilPageIsLoaded(15);
     }
 
-    @And("user clicks Project Status dropdown")
+    @When("user clicks Project Status dropdown")
     public void userClicksAllRolesDropdown() throws InterruptedException {
          implementationMPage.userclickedAllStatus();
          smartWait.waitUntilPageIsLoaded(15);
     }
 
-    @And("select {string} project status")
+    @And("select {string} project status for customer list")
     public void selectRole(String arg0) throws InterruptedException {
         Utility.dropdownCount(openDriver(), ".mat-option>span");
         implementationMPage.selectBtnImplementationManager();
         smartWait.waitUntilPageIsLoaded(20);
     }
 
-    @And("user enters {string} into the search bar")
+    @Then("user should see customer list")
+    public void customerListAppear() throws InterruptedException {
+
+    }
+
+    @Then("user enters {string} into the search bar")
     public void searchCustomerNumber(String customerNumber) throws InterruptedException{
         implementationMPage.enterCustomerNumber(customerNumber);
         smartWait.waitUntilPageIsLoaded(20);
