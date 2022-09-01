@@ -33,6 +33,8 @@ public class Hooks extends AutomationBase {
         SimpleDateFormat sdf = new SimpleDateFormat("MM.dd-hh");
         Date date = new Date();
         this.scenario = scenario;
+        System.out.println("scenario is fails: " +scenario.isFailed());
+        System.out.println("scenario status: " +scenario.getStatus());
         if (scenario.isFailed() || scenario.getStatus() != Status.PASSED) {
             final byte[] failshot = AutomationBase.screenShot();
 

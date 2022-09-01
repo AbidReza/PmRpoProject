@@ -1,7 +1,6 @@
 com\parata\base\DriverSetup.class
 com\parata\steps\CleanupSteps.class
 com\parata\models\Token$TokenBuilder.class
-Runner\CTestRunner.class
 com\parata\models\GET_User_Request.class
 com\parata\base\DriverOptions$3.class
 com\parata\base\DriverOptions.class
@@ -38,7 +37,6 @@ com\parata\utils\services\authorization\DeleteOrgRequest.class
 com\parata\pages\LoginPage.class
 com\parata\constants\GLOBAL.class
 com\parata\steps\ExportPageSteps.class
-Runner\BTestRunner.class
 com\parata\models\GetRequestUser$GetRequestUserBuilder.class
 com\parata\models\authorizationservice\OrgStatus.class
 com\parata\utils\SmartWait$1.class

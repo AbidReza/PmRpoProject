@@ -73,9 +73,6 @@ public class CleanupSteps extends AutomationBase {
         }
     }
 
-
-    
-
     @After(value = "@OrganizationCleanup")
     public void HardDeleteOrganization() {
         String organiationId = testContext.getScenarioContext().getContext(CONTEXT.ORGANIZATION_ID_TO_HARD_DELETE).toString();

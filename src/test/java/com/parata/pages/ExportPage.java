@@ -16,16 +16,19 @@ import org.openqa.selenium.support.ui.Select;
 
 public class ExportPage extends CommonPageMethods{
 
-    @FindBy(how = How.ID, using = ("mat-tab-label-0-1"))
+    @FindBy(how = How.ID, using = ("mat-tab-label-1-1"))
     public WebElement tabNotAvailableTab;
 
-    @FindBy(how = How.ID, using = ("mat-tab-label-0-2"))
+    @FindBy(how = How.ID, using = ("mat-tab-label-1-2"))
     public WebElement tabExcluded;
 
-    @FindBy(how = How.ID, using = ("mat-tab-label-0-3"))
+    @FindBy(how = How.ID, using = ("mat-tab-label-1-3"))
     public WebElement tabNotOralSolid;
 
-    @FindBy(how = How.ID, using = ("mat-tab-label-0-0"))
+    @FindBy(how = How.ID, using = ("mat-tab-label-1-4"))
+    public WebElement tabCellLocator;
+
+    @FindBy(how = How.ID, using = ("mat-tab-label-1-0"))
     public WebElement tabAnalysis;
 
     @FindBy(how=How.XPATH, using=("/html/body/app-root/div/ng-sidebar-container/div/div/div/mat-sidenav-container/mat-sidenav-content/div/div/app-customer-drug-list/app-card/div/div[2]/section/div[1]/div/div[2]/span"))
@@ -163,6 +166,7 @@ public class ExportPage extends CommonPageMethods{
         click(tabNotAvailableTab);
         click(tabExcluded);
         click(tabNotOralSolid);
+        click(tabCellLocator);
         click(tabAnalysis);
     }
 

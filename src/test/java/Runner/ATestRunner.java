@@ -5,7 +5,7 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 /**
- * @author MFU
+ * @author ABD
  * 1/7/2021
  */
 @RunWith(Cucumber.class)
@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features/",
         glue = "com.parata.steps",
         monochrome = true,
-        tags = "@atest",
+        tags = "Not @smoke",
         plugin = { "pretty", "html:target/cucumber/cucumber-prettya.html",
                 "json:target/cucumber/cucumber_a.json",
                 "junit:target/cucumber/cucumber_a.xml"})

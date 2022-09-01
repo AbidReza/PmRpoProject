@@ -2,6 +2,7 @@ package com.parata.steps;
 
 import com.parata.base.AutomationBase;
 import com.parata.pages.ImplementationMPage;
+import com.parata.pages.ImportWizerdMapImportedPage;
 import com.parata.utils.SmartWait;
 import com.parata.utils.Utility;
 import com.parata.utils.context.TestContext;
@@ -28,13 +29,9 @@ public class ImplementationMPageSteps extends AutomationBase {
         testContext = context;
     }
 
-    @When("user click ImplementaionMgmt icon")
-    public void implementaionMgmtClicked() {
-        implementationMPage.implementaionMgmtClicked();
-    }
-
     @Then("user will land {string} page")
     public void userWillLandPage(String url_part) {
+        implementationMPage.implementaionMgmtClicked();
         String landingUrl = openDriver().getCurrentUrl();
         System.out.println(landingUrl);
         Assert.assertTrue(landingUrl.contains(url_part));
@@ -45,26 +42,16 @@ public class ImplementationMPageSteps extends AutomationBase {
     public void userClicksAllRolesDropdown() throws InterruptedException {
          implementationMPage.userclickedAllStatus();
          smartWait.waitUntilPageIsLoaded(15);
+         System.out.println("Open dropdown list of project status");
     }
 
     @And("select {string} project status for customer list")
     public void selectRole(String arg0) throws InterruptedException {
         Utility.dropdownCount(openDriver(), ".mat-option>span");
         implementationMPage.selectBtnImplementationManager();
-        smartWait.waitUntilPageIsLoaded(20);
+        smartWait.waitUntilPageIsLoaded(15);
+        System.out.println("Select  Not processed project status");
     }
-
-    @Then("user should see customer list")
-    public void customerListAppear() throws InterruptedException {
-
-    }
-
-    @Then("user enters {string} into the search bar")
-    public void searchCustomerNumber(String customerNumber) throws InterruptedException{
-        implementationMPage.enterCustomerNumber(customerNumber);
-        smartWait.waitUntilPageIsLoaded(20);
-    }
-
 
 
 }

@@ -44,11 +44,6 @@ public class ImportWizerdMapImportedPage extends CommonPageMethods{
     @FindBy(how = How.XPATH, using = ("//*[@id=\"mat-option-24\"]"))
     public WebElement btnRxName;
 
-//    @FindBy(how = How.ID, using = ("mat-radio-13"))
-//    public WebElement rbtUnitUsage1;
-//
-//    @FindBy(how = How.ID, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard/div/div/form/mat-dialog-content/div[5]/span[2]/mat-radio-group/mat-radio-button[1]/label/span[1]/span[1]"))
-//    public WebElement rbtNumberOrder1;
 
     @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard/div/div/form/mat-dialog-actions/button[2]"))
     public WebElement btnNext;
@@ -92,7 +87,7 @@ public class ImportWizerdMapImportedPage extends CommonPageMethods{
     @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[4]/div/div/div/mat-option[2]"))
     public WebElement btnFullMainFold;
 
-    @FindBy(how=How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-one/div/form/mat-dialog-actions/button[3]"))
+    @FindBy(how=How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard/div/div/form/mat-dialog-actions/button[3]"))
     public WebElement btnWizardImport;
 
     WebDriver webDriver;
@@ -199,11 +194,6 @@ public class ImportWizerdMapImportedPage extends CommonPageMethods{
         click(btnFullMainFold);
     }
 
-//    public void btnRadioUnitAge() throws InterruptedException {
-//        click(btnRadioUnitAge);
-//    }
-
-///--
     public void userclickedWizardImportButton() throws InterruptedException {
         click(btnWizardImport);
     }

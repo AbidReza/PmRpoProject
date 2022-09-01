@@ -35,7 +35,6 @@ public class AutomationBase {
             driverThread = ThreadLocal.withInitial(() -> {
             AutomationFactory automationThread = new AutomationFactory();
             automationThreadPool.add(automationThread);
-
             return automationThread;
         });
     }

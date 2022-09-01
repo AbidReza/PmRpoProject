@@ -1,6 +1,5 @@
 package com.parata.pages;
 
-
 import com.parata.utils.CommonPageMethods;
 import com.parata.utils.SmartWait;
 import com.parata.utils.Utility;
@@ -30,8 +29,6 @@ public class ImplementationMPage extends CommonPageMethods {
     @FindBy(how = How.XPATH, using = ("//*[@id=\"mat-option-5\"]/span"))
     public WebElement btnNotProcessed;
 
-    @FindBy(how = How.ID, using = ("search_customers"))
-    public WebElement inputCustomerNumber;
 
     WebDriver webDriver;
 
@@ -51,11 +48,5 @@ public class ImplementationMPage extends CommonPageMethods {
     public void selectBtnImplementationManager() throws InterruptedException {
         click(btnNotProcessed);
     }
-
-    public void enterCustomerNumber(String customerNumber) {
-        inputCustomerNumber.sendKeys(customerNumber);
-    }
-
-
 
 }

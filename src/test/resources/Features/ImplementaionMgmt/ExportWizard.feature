@@ -1,26 +1,16 @@
-@ctest
 Feature: Base Functionality For Export Wizard Page
 
-  Background:
+Background:
     Given user logged in TacoUI with "IM" credentials
-    When user click ImplementaionMgmt icon
-    Then user will land "im-tool" page
 
-  @positive @sanity
-  Scenario:Selected Project Status Should Be Reflect In customer list area
+  Scenario:Upload file and select mapping column
     When user clicks Project Status dropdown
     And select 'NotProcessed' project status for customer list
-    Then user should see customer list
-  @positive @sanity
-  Scenario: Upload file and select mapping column
-    When user click import button
+    And user click import button
     And user click browse button
     And user click update button
-    Then user should receive file successfully uploaded message
 
-
-  @positive @sanity
-  Scenario: User mapped imported columns
+  Scenario:User mapped imported columns
     When user clicks Production Drug dropdown
     And select 'Product Name' from drug dropdown
     And user clicks NDC from Drug dropdown
@@ -29,10 +19,8 @@ Feature: Base Functionality For Export Wizard Page
     And select 'Rx Count' Rx from drug dropdown
     And user click next button
 
-
-  @positive @sanity
-  Scenario: Choose what to exclude from the attached file
-    When user should select device type dropdown
+  Scenario:Choose what to exclude from the attached file
+    Then user should select device type dropdown
     And select "Max 2" device option
     And user checked exclude button
     And user checked exclude schedule button
@@ -44,6 +32,23 @@ Feature: Base Functionality For Export Wizard Page
     And user should select sub device type dropdown
     And user select "Full Manifold" sub device option
     And user click wizard import button
+
+  Scenario:Verify export wizard page all functionality works
+    Then user click all tabs
+    Then click gnc button
+    Then user click to check duplicate drugs
+    Then click confirm button
+    Then click cddb button
+    Then user enters "FACE" drug name into the search bar
+    Then click pagination button
+    Then user checked drug name form list
+    Then click to add for drug list
+    Then click ok button
+    Then user checked drug name
+    Then user clicked remove button
+    Then user clicked remove confirm button
+    Then user select again checked drug name
+    Then user select cell location dropdown
 
 
 

@@ -2,13 +2,20 @@ package com.parata.steps;
 
 import com.parata.base.AutomationBase;
 import com.parata.pages.ImplementationMPage;
+import com.parata.pages.ExportPage;
+
 import com.parata.pages.ImportWizerdMapImportedPage;
 import com.parata.utils.SmartWait;
 import com.parata.utils.Utility;
 import com.parata.utils.context.TestContext;
+import com.parata.steps.ImplementationMPageSteps;
+import com.parata.steps.ExportPageSteps;
+import com.parata.pages.ExportPage;
+
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.After;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -17,52 +24,63 @@ import org.openqa.selenium.support.pagefactory.ByAll;
 
 public class ImportWizerdMapImportedSteps extends AutomationBase {
     ImportWizerdMapImportedPage importWizerdMapImportedPage = new ImportWizerdMapImportedPage(openDriver());
-    SmartWait smartWait = new SmartWait();
+    ImplementationMPageSteps  implementationMPageStep;
+    ExportPageSteps exportPageSteps;
+    ExportPage exportPage = new ExportPage(openDriver());
 
-    @Then("user click import button")
-    public void clickImportButton() throws InterruptedException{
-
-        importWizerdMapImportedPage.userclickedImportButton();
-        smartWait.waitUntilPageIsLoaded(20);
+    public ImportWizerdMapImportedSteps(TestContext testContext)
+    {
+        implementationMPageStep = new ImplementationMPageSteps(testContext);
+        exportPageSteps = new ExportPageSteps(testContext);
     }
 
-    @Then("user click browse button")
+    SmartWait smartWait = new SmartWait();
+
+    @And("user click import button")
+    public void clickImportButton() throws InterruptedException{
+        importWizerdMapImportedPage.userclickedImportButton();
+        smartWait.waitUntilPageIsLoaded(30);
+        System.out.println("User clicked import button");
+    }
+
+    @And("user click browse button")
     public void clickBrowseButton() throws InterruptedException{
         importWizerdMapImportedPage.userclickedBrowseButton();
         smartWait.waitUntilPageIsLoaded(20);
     }
 
-    @When("user click update button")
+    @And("user click update button")
     public void clickUploadButton() throws InterruptedException{
         importWizerdMapImportedPage.userclickedUploadButton();
         smartWait.waitUntilPageIsLoaded(90);
     }
 
-    @Then("user should receive file successfully uploaded message")
-    public void userShouldReceiveSuccessfullyUpload() throws InterruptedException {
-
-    }
-
-    @Then("user clicks Production Drug dropdown")
+    @When("user clicks Production Drug dropdown")
     public void userClicksDrugMapDropdown1() throws InterruptedException {
+        implementationMPageStep.userClicksAllRolesDropdown();
+        implementationMPageStep.selectRole("NotProcessed");
+        clickImportButton();
+        clickBrowseButton();
+        clickUploadButton();
         importWizerdMapImportedPage.userselectMapDropdown1();
-        smartWait.waitUntilPageIsLoaded(10);
+        smartWait.waitUntilPageIsLoaded(20);
     }
 
-    @Then("select {string} from drug dropdown")
+
+    @And("select {string} from drug dropdown")
     public void selectDrugProducName(String arg0) throws InterruptedException {
         Utility.dropdownCount(openDriver(), ".mat-option>span");
         importWizerdMapImportedPage.selectBtnProductDragName();
         smartWait.waitUntilPageIsLoaded(10);
     }
 
-    @Then("user clicks NDC from Drug dropdown")
+    @And("user clicks NDC from Drug dropdown")
     public void userClicksDrugMapDropdown2() throws InterruptedException {
         importWizerdMapImportedPage.userselectMapDropdown2();
         smartWait.waitUntilPageIsLoaded(10);
     }
 
-    @Then("select {string} NDC from drug dropdown")
+    @And("select {string} NDC from drug dropdown")
     public void selectDrugNdcName(String arg0) throws InterruptedException {
         Utility.dropdownCount(openDriver(), ".mat-option>span");
         importWizerdMapImportedPage.selectBtnNdcDragName();
@@ -82,17 +100,7 @@ public class ImportWizerdMapImportedSteps extends AutomationBase {
         smartWait.waitUntilPageIsLoaded(10);
     }
 
-//    @Then("user select unit usage radio button")
-//    public void userSelectUnitUsageRadioButton() throws InterruptedException {
-//        importWizerdMapImportedPage.btnRadioUnitUsage();
-//        smartWait.waitUntilPageIsLoaded(15);
-//    }
-//
-//    @Then("user select number of order radio button")
-//    public void userSelectNumberOfOrderRadioButton() throws InterruptedException {
-//        importWizerdMapImportedPage.btnRadioUnitUsage();
-//        smartWait.waitUntilPageIsLoaded(15);
-//    }
+
     @Then("user click next button")
     public void userClicksNextButton() throws InterruptedException {
         importWizerdMapImportedPage.userclickedNextButton();
@@ -100,6 +108,19 @@ public class ImportWizerdMapImportedSteps extends AutomationBase {
     }
     @Then("user should select device type dropdown")
     public void userShouldSelectDeviceType() throws InterruptedException {
+
+        implementationMPageStep.userClicksAllRolesDropdown();
+        implementationMPageStep.selectRole("NotProcessed");
+        clickImportButton();
+        clickBrowseButton();
+        clickUploadButton();
+        importWizerdMapImportedPage.userselectMapDropdown1();
+        selectDrugProducName("Product Name");
+        userClicksDrugMapDropdown2();
+        selectDrugNdcName("NDC11");
+        userClicksDrugMapDropdown3();
+        selectDrugRxName("Rx Count");
+        userClicksNextButton();
         importWizerdMapImportedPage.selectDeviceType();
         smartWait.waitUntilPageIsLoaded(10);
     }
@@ -160,11 +181,6 @@ public class ImportWizerdMapImportedSteps extends AutomationBase {
         smartWait.waitUntilPageIsLoaded(60);
     }
 
-//    @Then("user select unit of age radio button")
-//    public void userSelectUnitOfAgeRadioButton() throws InterruptedException {
-//        importWizerdMapImportedPage.btnRadioUnitAge();
-//        smartWait.waitUntilPageIsLoaded(15);
-//    }
 
     @Then("user should select sub device type dropdown")
     public void userShouldSelectSubDeviceType() throws InterruptedException {
@@ -179,10 +195,140 @@ public class ImportWizerdMapImportedSteps extends AutomationBase {
         smartWait.waitUntilPageIsLoaded(15);
     }
 
-
     @Then("user click wizard import button")
     public void clickWizardImportButton() throws InterruptedException{
         importWizerdMapImportedPage.userclickedWizardImportButton();
-        smartWait.waitUntilPageIsLoaded(60);
+        smartWait.waitUntilPageIsLoaded(90);
     }
+
+    @Then("user click all tabs")
+    public void clickNotAvailabletab() throws InterruptedException{
+        implementationMPageStep.userClicksAllRolesDropdown();
+        implementationMPageStep.selectRole("NotProcessed");
+        clickImportButton();
+        clickBrowseButton();
+        clickUploadButton();
+        importWizerdMapImportedPage.userselectMapDropdown1();
+        selectDrugProducName("Product Name");
+        userClicksDrugMapDropdown2();
+        selectDrugNdcName("NDC11");
+        userClicksDrugMapDropdown3();
+        selectDrugRxName("Rx Count");
+        userClicksNextButton();
+        importWizerdMapImportedPage.selectDeviceType();
+        clickGncButton();
+        checkDuplicateDrug();
+        clickedConfirmButton();
+        clickedCddbButton();
+        searchDrugName("FACE");
+        clickedPaginationButton();
+        checkDrugNameList();
+        clickedAddButton();
+        clickedOkButton();
+        checkDrugName();
+        userClickRemoveButton();
+        userClickRemoveConfirmButton();
+        userSelectAgainCheckedDrugName();
+        userClickCellLocationDropdown();
+        userClickCellLocationOption();
+        clickPenButton();
+        exportPage.userclickedAllTab();
+        smartWait.waitUntilPageIsLoaded(30);
+    }
+
+    @Then("click gnc button")
+    public void clickGncButton() throws InterruptedException{
+        exportPage.userClickedGcnLink();
+        smartWait.waitUntilPageIsLoaded(15);
+    }
+
+    @Then("user click to check duplicate drugs")
+    public void checkDuplicateDrug() throws InterruptedException{
+        exportPage.userCheckedDuplicate();
+        smartWait.waitUntilPageIsLoaded(15);
+    }
+
+    @Then("click confirm button")
+    public void clickedConfirmButton() throws InterruptedException{
+        exportPage.userClickedConfirmButton();
+        smartWait.waitUntilPageIsLoaded(15);
+    }
+
+    @Then("click cddb button")
+    public void clickedCddbButton() throws InterruptedException{
+        exportPage.userClickedCddbButton();
+        smartWait.waitUntilPageIsLoaded(15);
+    }
+
+    @Then("user enters {string} drug name into the search bar")
+    public void searchDrugName(String drugName) {
+        exportPage.enterSearchDrugName(drugName);
+        smartWait.waitUntilPageIsLoaded(20);
+    }
+    @Then("click pagination button")
+    public void clickedPaginationButton() throws InterruptedException{
+        exportPage.clickPagination();
+        smartWait.waitUntilPageIsLoaded(15);
+    }
+
+    @Then("user checked drug name form list")
+    public void checkDrugNameList() throws InterruptedException{
+        exportPage.userCheckDrugList();
+        smartWait.waitUntilPageIsLoaded(20);
+    }
+
+    @Then("click to add for drug list")
+    public void clickedAddButton() throws InterruptedException{
+        exportPage.userClickedBtnAdd();
+        smartWait.waitUntilPageIsLoaded(15);
+    }
+
+    @Then("click ok button")
+    public void clickedOkButton() throws InterruptedException{
+        exportPage.userClickedBtnOk();
+        smartWait.waitUntilPageIsLoaded(15);
+    }
+
+    @Then("user checked drug name")
+    public void checkDrugName() throws InterruptedException{
+        exportPage.userCheckedDrugName();
+        smartWait.waitUntilPageIsLoaded(20);
+    }
+
+    @Then("user clicked remove button")
+    public void userClickRemoveButton() throws InterruptedException{
+        exportPage.userClickedBtnRemove();
+        smartWait.waitUntilPageIsLoaded(15);
+    }
+
+    @Then("user clicked remove confirm button")
+    public void userClickRemoveConfirmButton() throws InterruptedException{
+        exportPage.userClickedBtnRemoveConfirm();
+        smartWait.waitUntilPageIsLoaded(15);
+    }
+
+    @Then("user select again checked drug name")
+    public void userSelectAgainCheckedDrugName() throws InterruptedException{
+        exportPage.userCheckedDrugNameAgain();
+        smartWait.waitUntilPageIsLoaded(20);
+    }
+
+    @Then("user select cell location dropdown")
+    public void userClickCellLocationDropdown() throws InterruptedException{
+        exportPage.userSelectCellLocationDropdown();
+        smartWait.waitUntilPageIsLoaded(15);
+    }
+
+    @Then("user select cell location option")
+    public void userClickCellLocationOption() throws InterruptedException{
+        exportPage.userSelectCallLocationDropDownOption();
+        smartWait.waitUntilPageIsLoaded(15);
+    }
+
+    @Then("click pen option")
+    public void clickPenButton() throws InterruptedException{
+        exportPage.userClickedBtnPenOption();
+        smartWait.waitUntilPageIsLoaded(15);
+    }
+
 }

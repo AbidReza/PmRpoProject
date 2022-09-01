@@ -4,6 +4,7 @@ import com.parata.base.AutomationBase;
 import com.parata.pages.LoginPage;
 import com.parata.utils.Launcher;
 import com.parata.utils.ConfigReader;
+import com.parata.pages.ImplementationMPage;
 import com.parata.utils.SmartWait;
 import com.parata.utils.Utility;
 import io.cucumber.java.en.And;
@@ -18,6 +19,7 @@ import org.openqa.selenium.WebDriver;
 
 public class LoginPageSteps extends AutomationBase{
 
+    ImplementationMPage implementationMPage = new ImplementationMPage(openDriver());
     Launcher launcher = new Launcher(openDriver());
     LoginPage loginPage = new LoginPage(openDriver());
     SmartWait smartWait = new SmartWait();
@@ -68,12 +70,13 @@ public class LoginPageSteps extends AutomationBase{
         } else if (!username.equals(ConfigReader.getProperty("IM.username")) & !username.equals(ConfigReader.getProperty("PTAC.username"))) {
             String landingUrl = openDriver().getCurrentUrl();
             System.out.println(landingUrl);
-        } else if (username.equals(ConfigReader.getProperty("PTAC.username"))) {
-            String landingUrl = openDriver().getCurrentUrl();
-            System.out.println(landingUrl);
+
         } else {
             String landingUrl = openDriver().getCurrentUrl();
             System.out.println(landingUrl);
+
+            implementationMPage.implementaionMgmtClicked();
+
         }
         try {
             loginPage.btnCloseWarning.click();
