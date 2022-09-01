@@ -53,6 +53,12 @@ public class ImplementationMPageSteps extends AutomationBase {
         System.out.println("Select  Not processed project status");
     }
 
+    @Then("user should see customer list")
+    public void userShouldSeeCustomerList() {
+        smartWait.elementLoaded(implementationMPage.customerList);
+        Assert.assertTrue("User should see customer list", implementationMPage.isCustomerAvailable());
+        System.out.println("Customer List Displayed");
+    }
 
 }
 

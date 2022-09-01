@@ -29,6 +29,9 @@ public class ImplementationMPage extends CommonPageMethods {
     @FindBy(how = How.XPATH, using = ("//*[@id=\"mat-option-5\"]/span"))
     public WebElement btnNotProcessed;
 
+    @FindBy(how = How.XPATH, using = ("/html/body/app-root/div/ng-sidebar-container/div/div/div/mat-sidenav-container"))
+    public WebElement customerList;
+
 
     WebDriver webDriver;
 
@@ -47,6 +50,9 @@ public class ImplementationMPage extends CommonPageMethods {
 
     public void selectBtnImplementationManager() throws InterruptedException {
         click(btnNotProcessed);
+    }
+    public Boolean isCustomerAvailable() {
+        return customerList.isDisplayed();
     }
 
 }

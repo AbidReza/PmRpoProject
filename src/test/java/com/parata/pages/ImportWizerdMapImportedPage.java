@@ -26,6 +26,10 @@ public class ImportWizerdMapImportedPage extends CommonPageMethods{
     @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard/div/div/div/div/div[2]/button"))
     public WebElement btnUpload;
 
+    @FindBy(how = How.XPATH, using = ("//*[@id=\"File successfully uploaded!\"]"))
+    public WebElement getMessage;
+
+
     @FindBy(how = How.XPATH, using = ("//*[@id=\"mat-select-6\"]"))
     public WebElement dropdownDrugName;
 
@@ -87,7 +91,7 @@ public class ImportWizerdMapImportedPage extends CommonPageMethods{
     @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[4]/div/div/div/mat-option[2]"))
     public WebElement btnFullMainFold;
 
-    @FindBy(how=How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard/div/div/form/mat-dialog-actions/button[3]"))
+    @FindBy(how=How.XPATH, using = ("//*[@id=\"import\"]"))
     public WebElement btnWizardImport;
 
     WebDriver webDriver;
@@ -107,6 +111,10 @@ public class ImportWizerdMapImportedPage extends CommonPageMethods{
 
     public void userclickedUploadButton() throws InterruptedException {
         click(btnUpload);
+    }
+
+    public String userSeeSuccessfullyMessage() throws InterruptedException {
+        return getMessage.getText();
     }
 
     public void userselectMapDropdown1() throws InterruptedException {
