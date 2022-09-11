@@ -26,9 +26,8 @@ public class ImportWizerdMapImportedPage extends CommonPageMethods{
     @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard/div/div/div/div/div[2]/button"))
     public WebElement btnUpload;
 
-    @FindBy(how = How.XPATH, using = ("//*[@id=\"File successfully uploaded!\"]"))
-    public WebElement getMessage;
-
+    @FindBy(how = How.XPATH, using = ("//*[@id=\"OrgChoosen\"]"))
+    public WebElement getRemoveButton;
 
     @FindBy(how = How.XPATH, using = ("//*[@id=\"mat-select-6\"]"))
     public WebElement dropdownDrugName;
@@ -48,8 +47,11 @@ public class ImportWizerdMapImportedPage extends CommonPageMethods{
     @FindBy(how = How.XPATH, using = ("//*[@id=\"mat-option-24\"]"))
     public WebElement btnRxName;
 
+    //--
+    @FindBy(how = How.XPATH, using = ("//*[@id=\"mat-checkbox-1\"]/label/span[1]"))
+    public WebElement chkNoUsage;
 
-    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard/div/div/form/mat-dialog-actions/button[2]"))
+    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard/div/div/form/mat-dialog-actions/button[3]"))
     public WebElement btnNext;
 
     @FindBy(how = How.XPATH, using = ("//*[@id=\"mat-select-16\"]"))
@@ -61,7 +63,7 @@ public class ImportWizerdMapImportedPage extends CommonPageMethods{
     @FindBy(how = How.ID, using = ("mat-radio-2"))
     public WebElement btnRadioStandrad;
 
-    @FindBy(how = How.XPATH, using = ("//*[@id=\"mat-checkbox-1\"]/label/span[1]"))
+    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard/div/div/form/div/mat-dialog-content/div[2]/div[1]/div/mat-checkbox/label/span[1]"))
     public WebElement btnChkExcludeDrug;
 
     @FindBy(how = How.XPATH, using = ("//*[@id=\"mat-checkbox-2\"]/label/span[1]"))
@@ -69,6 +71,10 @@ public class ImportWizerdMapImportedPage extends CommonPageMethods{
 
     @FindBy(how = How.XPATH, using = ("//*[@id=\"mat-checkbox-4\"]/label/span[1]"))
     public WebElement btnChkExcludeSchedule1;
+
+    @FindBy(how = How.XPATH, using = ("//*[@id=\"mat-checkbox-4\"]/label/span[1]"))
+    public WebElement importWizardDocPage;
+
 
     @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard/div/div/form/div/mat-dialog-content/div[2]/div[3]/div[1]/mat-checkbox/label/span[1]"))
     public WebElement btnChkExcludeSchedule2;
@@ -82,17 +88,43 @@ public class ImportWizerdMapImportedPage extends CommonPageMethods{
     @FindBy(how=How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard/div/div/form/div/mat-dialog-content/div[3]/div[1]/button"))
     public WebElement btnAnalyze;
 
-//    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard/div/div/form/div/mat-dialog-content/div[2]/div[4]/div[2]/mat-radio-group/mat-radio-button[2]/label/span[1]/span[1]"))
-//    public WebElement btnRadioUnitAge;
 
     @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard/div/div/form/div/mat-dialog-content/div[3]/div[3]/mat-form-field/div/div[1]/div/mat-select"))
     public WebElement dropdownSubDevice;
 
-    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[4]/div/div/div/mat-option[2]"))
+    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[4]/div/div/div/mat-option[5]"))
     public WebElement btnFullMainFold;
 
     @FindBy(how=How.XPATH, using = ("//*[@id=\"import\"]"))
     public WebElement btnWizardImport;
+
+    @FindBy(how = How.XPATH, using = ("//*[@id=\"addnewsite\"]/div/div[1]"))
+    public WebElement importWizardDoc;
+
+    @FindBy(how = How.XPATH, using = ("/html/body/app-root/div/ng-sidebar-container/div/div/div/mat-sidenav-container/mat-sidenav-content/div/div/app-customer-drug-list/app-card/div/div[2]/section/div[1]/div/div/div[4]/mat-form-field/div/div[1]/div/mat-select/div/div[1]/span/span"))
+    public WebElement ndcShortedMessage;
+
+    @FindBy(how = How.XPATH, using = ("//*[@id=\"mat-dialog-0\"]/app-import-wizard/div/div/form/div/mat-dialog-content/div[3]/div[2]/h5"))
+    public WebElement cellRecommendation;
+
+    @FindBy(how = How.XPATH, using = ("//*[@id=\"search_customers\"]"))
+    public WebElement exportWizardPage;
+
+    @FindBy(how = How.XPATH, using = ("/html/body/app-root/div/ng-sidebar-container/div/div/div/mat-sidenav-container"))
+    public WebElement dulicateNdcChkh;
+
+    @FindBy(how = How.XPATH, using = ("//*[@id=\"matTable\"]/thead/tr/th[5]/div/div[1]"))
+    public WebElement cellAnalysisList;
+
+    @FindBy(how = How.XPATH, using = ("/html/body/app-root/div/ng-sidebar-container/div/div/div/mat-sidenav-container"))
+    public WebElement exportWizardPageDuplicateNDC;
+
+    @FindBy(how = How.XPATH, using = ("/html/body/app-root/div/ng-sidebar-container/div/div/div/header/app-header/mat-toolbar/div[2]/div/div/mat-card-actions/button"))
+    public WebElement loginButton;
+    //
+
+
+
 
     WebDriver webDriver;
 
@@ -113,8 +145,9 @@ public class ImportWizerdMapImportedPage extends CommonPageMethods{
         click(btnUpload);
     }
 
-    public String userSeeSuccessfullyMessage() throws InterruptedException {
-        return getMessage.getText();
+
+    public Boolean userSeeSuccessfullyMessage() throws InterruptedException {
+        return getRemoveButton.isDisplayed();
     }
 
     public void userselectMapDropdown1() throws InterruptedException {
@@ -140,6 +173,12 @@ public class ImportWizerdMapImportedPage extends CommonPageMethods{
     public void selectBtnRxDragName() throws InterruptedException {
         click(btnRxName);
     }
+
+    public void selectChkNOUsage() throws InterruptedException {
+        click(chkNoUsage);
+    }
+
+
 
 //    public void btnRadioUnitUsage() throws InterruptedException {
 //        click(rbtUnitUsage1);
@@ -205,4 +244,38 @@ public class ImportWizerdMapImportedPage extends CommonPageMethods{
     public void userclickedWizardImportButton() throws InterruptedException {
         click(btnWizardImport);
     }
+
+    public String isImportWizardDocPage() throws InterruptedException {
+        return importWizardDoc.getText();
+    }
+
+    public String isDuplicateNDCSorted() throws InterruptedException {
+        return ndcShortedMessage.getText();
+    }
+
+    public String isCellRecommendation() throws InterruptedException {
+        return cellRecommendation.getText();
+    }
+
+    public String isAnalysisCellList() throws InterruptedException {
+        return cellAnalysisList.getText();
+    }
+
+    public Boolean isImportWizardDocPageAvailable() {
+        return importWizardDocPage.isDisplayed();
+    }
+
+    public Boolean isExportWizardPageAvailable() {
+        return exportWizardPage.isDisplayed();
+    }
+
+    public String isLoginButton() throws InterruptedException {
+        return loginButton.getText();
+    }
+
+    public Boolean isExportWizardDuplicateNDcChk() {
+        return dulicateNdcChkh.isDisplayed();
+    }
+
+
 }

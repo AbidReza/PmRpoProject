@@ -16,100 +16,103 @@ import org.openqa.selenium.support.ui.Select;
 
 public class ExportPage extends CommonPageMethods{
 
-    @FindBy(how = How.ID, using = ("mat-tab-label-1-1"))
+    @FindBy(how = How.XPATH, using = ("/html/body/app-root/div/ng-sidebar-container/div/div/div/mat-sidenav-container/mat-sidenav-content/div/div/app-customer-drug-list/app-card/div/div[2]/section/div[2]/mat-tab-group/mat-tab-header/div[2]/div/div/div[2]"))
     public WebElement tabNotAvailableTab;
 
-    @FindBy(how = How.ID, using = ("mat-tab-label-1-2"))
+    @FindBy(how = How.XPATH, using = ("/html/body/app-root/div/ng-sidebar-container/div/div/div/mat-sidenav-container/mat-sidenav-content/div/div/app-customer-drug-list/app-card/div/div[2]/section/div[2]/mat-tab-group/mat-tab-header/div[2]/div/div/div[3]"))
     public WebElement tabExcluded;
 
-    @FindBy(how = How.ID, using = ("mat-tab-label-1-3"))
+    @FindBy(how = How.XPATH, using = ("/html/body/app-root/div/ng-sidebar-container/div/div/div/mat-sidenav-container/mat-sidenav-content/div/div/app-customer-drug-list/app-card/div/div[2]/section/div[2]/mat-tab-group/mat-tab-header/div[2]/div/div/div[4]"))
     public WebElement tabNotOralSolid;
 
-    @FindBy(how = How.ID, using = ("mat-tab-label-1-4"))
+    @FindBy(how = How.XPATH, using = ("/html/body/app-root/div/ng-sidebar-container/div/div/div/mat-sidenav-container/mat-sidenav-content/div/div/app-customer-drug-list/app-card/div/div[2]/section/div[2]/mat-tab-group/mat-tab-header/div[2]/div/div/div[5]"))
     public WebElement tabCellLocator;
 
-    @FindBy(how = How.ID, using = ("mat-tab-label-1-0"))
+    @FindBy(how = How.XPATH, using = ("/html/body/app-root/div/ng-sidebar-container/div/div/div/mat-sidenav-container/mat-sidenav-content/div/div/app-customer-drug-list/app-card/div/div[2]/section/div[2]/mat-tab-group/mat-tab-header/div[2]/div/div/div[1]"))
     public WebElement tabAnalysis;
 
     @FindBy(how=How.XPATH, using=("/html/body/app-root/div/ng-sidebar-container/div/div/div/mat-sidenav-container/mat-sidenav-content/div/div/app-customer-drug-list/app-card/div/div[2]/section/div[1]/div/div[2]/span"))
     public  WebElement btnGcn;
 
-    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[3]/td[1]/mat-checkbox/label/span[1]"))
-    public WebElement chkDrug3;
+    @FindBy(how=How.XPATH, using=("//*[@id=\"Highest-Usage-Drugs\"]"))
+    public  WebElement btnHighestUsageDrug;
 
-    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[5]/td[1]/mat-checkbox/label/span[1]"))
-    public WebElement chkDrug5;
-
-    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[7]/td[1]/mat-checkbox/label/span[1]"))
-    public WebElement chkDrug7;
-
-    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[9]/td[1]/mat-checkbox/label/span[1]"))
-    public WebElement chkDrug9;
-
-    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[14]/td[1]/mat-checkbox/label/span[1]"))
-    public WebElement chkDrug14;
-
-    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[20]/td[1]/mat-checkbox/label/span[1]"))
-    public WebElement chkDrug20;
-
-    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[22]/td[1]/mat-checkbox/label/span[1]"))
-    public WebElement chkDrug22;
-
-    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[24]/td[1]/mat-checkbox/label/span[1]"))
-    public WebElement chkDrug24;
-
-    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[26]/td[1]/mat-checkbox/label/span[1]"))
-    public WebElement chkDrug26;
-
-    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[28]/td[1]/mat-checkbox/label/span[1]"))
-    public WebElement chkDrug28;
-
-    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[31]/td[1]/mat-checkbox/label/span[1]"))
-    public WebElement chkDrug31;
-
-    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[33]/td[1]/mat-checkbox/label/span[1]"))
-    public WebElement chkDrug33;
-
-    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[36]/td[1]/mat-checkbox/label/span[1]"))
-    public WebElement chkDrug36;
-
-    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[38]/td[1]/mat-checkbox/label/span[1]"))
-    public WebElement chkDrug38;
-
-    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[40]/td[1]/mat-checkbox/label/span[1]"))
-    public WebElement chkDrug40;
-
-    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[42]/td[1]/mat-checkbox/label/span[1]"))
-    public WebElement chkDrug42;
-
-    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[46]/td[1]/mat-checkbox/label/span[1]"))
-    public WebElement chkDrug46;
-
-    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[60]/td[1]/mat-checkbox/label/span[1]"))
-    public WebElement chkDrug60;
-
-    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[62]/td[1]/mat-checkbox/label/span[1]"))
-    public WebElement chkDrug62;
-
-    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[65]/td[1]/mat-checkbox/label/span[1]"))
-    public WebElement chkDrug65;
-
-    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[67]/td[1]/mat-checkbox/label/span[1]"))
-    public WebElement chkDrug67;
-
-    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[69]/td[1]/mat-checkbox/label/span[1]"))
-    public WebElement chkDrug69;
-
-    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[71]/td[1]/mat-checkbox/label/span[1]"))
-    public WebElement chkDrug71;
-
-    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[73]/td[1]/mat-checkbox/label/span[1]"))
-    public WebElement chkDrug73;
+//    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[3]/td[1]/mat-checkbox/label/span[1]"))
+//    public WebElement chkDrug3;
+//
+//    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[5]/td[1]/mat-checkbox/label/span[1]"))
+//    public WebElement chkDrug5;
+//
+//    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[7]/td[1]/mat-checkbox/label/span[1]"))
+//    public WebElement chkDrug7;
+//
+//    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[9]/td[1]/mat-checkbox/label/span[1]"))
+//    public WebElement chkDrug9;
+//
+//    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[14]/td[1]/mat-checkbox/label/span[1]"))
+//    public WebElement chkDrug14;
+//
+//    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[20]/td[1]/mat-checkbox/label/span[1]"))
+//    public WebElement chkDrug20;
+//
+//    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[22]/td[1]/mat-checkbox/label/span[1]"))
+//    public WebElement chkDrug22;
+//
+//    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[24]/td[1]/mat-checkbox/label/span[1]"))
+//    public WebElement chkDrug24;
+//
+//    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[26]/td[1]/mat-checkbox/label/span[1]"))
+//    public WebElement chkDrug26;
+//
+//    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[28]/td[1]/mat-checkbox/label/span[1]"))
+//    public WebElement chkDrug28;
+//
+//    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[31]/td[1]/mat-checkbox/label/span[1]"))
+//    public WebElement chkDrug31;
+//
+//    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[33]/td[1]/mat-checkbox/label/span[1]"))
+//    public WebElement chkDrug33;
+//
+//    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[36]/td[1]/mat-checkbox/label/span[1]"))
+//    public WebElement chkDrug36;
+//
+//    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[38]/td[1]/mat-checkbox/label/span[1]"))
+//    public WebElement chkDrug38;
+//
+//    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[40]/td[1]/mat-checkbox/label/span[1]"))
+//    public WebElement chkDrug40;
+//
+//    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[42]/td[1]/mat-checkbox/label/span[1]"))
+//    public WebElement chkDrug42;
+//
+//    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[46]/td[1]/mat-checkbox/label/span[1]"))
+//    public WebElement chkDrug46;
+//
+//    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[60]/td[1]/mat-checkbox/label/span[1]"))
+//    public WebElement chkDrug60;
+//
+//    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[62]/td[1]/mat-checkbox/label/span[1]"))
+//    public WebElement chkDrug62;
+//
+//    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[65]/td[1]/mat-checkbox/label/span[1]"))
+//    public WebElement chkDrug65;
+//
+//    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[67]/td[1]/mat-checkbox/label/span[1]"))
+//    public WebElement chkDrug67;
+//
+//    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[69]/td[1]/mat-checkbox/label/span[1]"))
+//    public WebElement chkDrug69;
+//
+//    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[71]/td[1]/mat-checkbox/label/span[1]"))
+//    public WebElement chkDrug71;
+//
+//    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/div/mat-dialog-content/div/table[1]/tbody/tr[73]/td[1]/mat-checkbox/label/span[1]"))
+//    public WebElement chkDrug73;
 
     @FindBy(how = How.ID,using =("Confirm"))
     public WebElement btnConfirm;
 
-    @FindBy(how = How.XPATH,using =("/html/body/app-root/div/ng-sidebar-container/div/div/div/mat-sidenav-container/mat-sidenav-content/div/div/app-customer-drug-list/app-card/div/div[2]/section/div[1]/div/div[1]/div[1]/button[2]"))
+    @FindBy(how = How.XPATH,using =("/html/body/app-root/div/ng-sidebar-container/div/div/div/mat-sidenav-container/mat-sidenav-content/div/div/app-customer-drug-list/app-card/div/div[2]/section/div[1]/div/div/div[2]/button[3]"))
     public WebElement btnCddb;
 
     @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-cddb/div/div/mat-dialog-content/div[1]/div/div/input"))
@@ -119,7 +122,11 @@ public class ExportPage extends CommonPageMethods{
     public WebElement btnPagination;
 
     @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-cddb/div/div/mat-dialog-content/div[2]/table[1]/tbody/tr[1]/td[1]/mat-checkbox/label/span[1]"))
-    public WebElement chkDrugListName1;
+    public WebElement chkName;
+
+
+
+
 
     @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-cddb/div/div/mat-dialog-content/div[1]/button"))
     public WebElement btnAddToDrugList;
@@ -133,27 +140,40 @@ public class ExportPage extends CommonPageMethods{
     @FindBy(how = How.XPATH, using = ("//*[@id=\"remove_celllocation\"]"))
     public WebElement btnRemove;
 
-    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-alert-wizard/mat-dialog-actions/button[2]"))
+    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-alert-wizard/div/mat-dialog-actions/button[2]"))
     public WebElement btnRemoveConfirm;
 
-    @FindBy(how = How.XPATH, using = ("/html/body/app-root/div/ng-sidebar-container/div/div/div/mat-sidenav-container/mat-sidenav-content/div/div/app-customer-drug-list/app-card/div/div[2]/section/div[2]/mat-tab-group/div/mat-tab-body[1]/div/div/table[1]/tbody/tr[1]/td[1]/mat-checkbox/label/span[1]"))
+    @FindBy(how = How.XPATH, using = ("//*[@id=\"mat-checkbox-33\"]/label/span[1]"))
     public WebElement chkDrugNameAgain;
 
-    @FindBy(how = How.XPATH, using = ("//*[@id=\"mat-select-458\"]"))
+    @FindBy(how = How.XPATH, using = ("//*[@id=\"matTable\"]/tbody/tr[1]/td[21]"))
     public WebElement dropdownCellLocation;
 
-    @FindBy(how = How.XPATH, using = ("////*[@id=\"mat-option-4\"]"))
+    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/div/div/mat-option"))
     public WebElement selectDropdownOption;
+
+    @FindBy(how = How.XPATH, using = ("//*[@id=\"mat-select-0\"]"))
+    public WebElement dropdownExport;
+
+    @FindBy(how = How.XPATH, using = ("//*[@id=\"mat-option-1\"]"))
+    public WebElement selectExcelReportXLS;
+
+    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-alert-wizard/div/mat-dialog-actions/button[2]"))
+    public WebElement btnExportConfirm;
+
+    @FindBy(how = How.XPATH, using = ("/html/body/app-root/div/ng-sidebar-container/div/div/div/header/app-header/mat-toolbar/div[2]/div/div/div/div/button"))
+    public WebElement btnLogOutDropDownButton;
+
+    @FindBy(how = How.XPATH, using = ("//*[@id=\"mat-menu-panel-6\"]/div/button"))
+    public WebElement btnLogOutButton;
+
 
 
     @FindBy(how = How.XPATH, using = ("//*[@id=\"matTable\"]/thead/tr/th[23]/mat-icon/img"))
     public WebElement btnPenOption;
 
-//    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-gcn/div/mat-dialog-actions/button[3]"))
-//    public WebElement btnExport;
-//
-//    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[4]/div/mat-dialog-container/app-alert-wizard/mat-dialog-actions/button[2]"))
-//    public WebElement btnConfirmExport;
+
+
 
     WebDriver webDriver;
 
@@ -173,32 +193,39 @@ public class ExportPage extends CommonPageMethods{
     public void userClickedGcnLink()throws InterruptedException{
         click(btnGcn);
     }
-    public void userCheckedDuplicate()throws  InterruptedException{
-        click(chkDrug3);
-        click(chkDrug5);
-        click(chkDrug7);
-        click(chkDrug9);
-        click(chkDrug14);
-        click(chkDrug20);
-        click(chkDrug22);
-        click(chkDrug24);
-        click(chkDrug26);
-        click(chkDrug28);
-        click(chkDrug31);
-        click(chkDrug33);
-        click(chkDrug36);
-        click(chkDrug38);
-        click(chkDrug40);
-        click(chkDrug42);
-        click(chkDrug46);
-        click(chkDrug60);
-        click(chkDrug62);
-        click(chkDrug65);
-        click(chkDrug67);
-        click(chkDrug69);
-        click(chkDrug71);
-        click(chkDrug73);
+
+    public void userClickedHighestUsageDrugButton()throws InterruptedException{
+        click(btnHighestUsageDrug);
     }
+
+//    public void userCheckedDuplicate()throws  InterruptedException{
+//        click(chkDrug3);
+//        click(chkDrug5);
+//        click(chkDrug7);
+//        click(chkDrug9);
+//        click(chkDrug14);
+//        click(chkDrug20);
+//        click(chkDrug22);
+//        click(chkDrug24);
+//        click(chkDrug26);
+//        click(chkDrug28);
+//        click(chkDrug31);
+//        click(chkDrug33);
+//        click(chkDrug36);
+//        click(chkDrug38);
+//        click(chkDrug40);
+//        click(chkDrug42);
+//        click(chkDrug46);
+//        click(chkDrug60);
+//        click(chkDrug62);
+//        click(chkDrug65);
+//        click(chkDrug67);
+//        click(chkDrug69);
+//        click(chkDrug71);
+//        click(chkDrug73);
+//    }
+
+
     public void userClickedConfirmButton()throws  InterruptedException{
         click(btnConfirm);
     }
@@ -213,26 +240,19 @@ public class ExportPage extends CommonPageMethods{
 
     public void clickPagination()throws  InterruptedException {
         click(btnPagination);
-
     }
-
     public void userCheckDrugList()throws  InterruptedException {
-        click(chkDrugListName1);
-
+        click(chkName);
     }
-
     public void userClickedBtnAdd()throws  InterruptedException{
         click(btnAddToDrugList);
     }
-
     public void userClickedBtnOk()throws  InterruptedException{
         click(btnOk);
     }
-
     public void userCheckedDrugName()throws  InterruptedException {
         click(chkDrugName);
     }
-
     public void userClickedBtnRemove()throws  InterruptedException{
         click(btnRemove);
     }
@@ -253,16 +273,26 @@ public class ExportPage extends CommonPageMethods{
         click(selectDropdownOption);
     }
 
+    public void userSelectExportDropdown() throws InterruptedException {
+        click(dropdownExport);
+    }
+
+    public void userSelectExcelReportXLS() throws InterruptedException {
+        click(selectExcelReportXLS);
+    }
+
+    public void userClickedBtnExportConfirm()throws  InterruptedException{
+        click(btnExportConfirm);
+    }
+
+    public void userClickedLogOutDropDown()throws  InterruptedException{
+        click(btnLogOutDropDownButton);
+    }
+    public void userClickedLogOutBtn()throws  InterruptedException{
+        click(btnLogOutButton);
+    }
     public void userClickedBtnPenOption()throws  InterruptedException{
         click(btnPenOption);
     }
-
-//    public void userClickedBtnExport()throws  InterruptedException{
-//        click(btnExport);
-//    }
-//
-//    public void userClickedBtnExportConfirm()throws  InterruptedException{
-//        click(btnConfirmExport);
-//    }
 
 }

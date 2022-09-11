@@ -7,12 +7,14 @@ Feature: Base Functionality For Import Wizard Mapping
   Scenario:Selected Project Status Should Be Reflect In customer list area
     When user clicks Project Status dropdown
     And select 'NotProcessed' project status for customer list
+    Then user should see customer list
 
   @positive @sanity
   Scenario: Upload file and select mapping column
     When user click import button
     And user click browse button
     And user click update button
+    Then user should see successful uploaded message
 
 
   @positive @sanity
@@ -24,6 +26,7 @@ Feature: Base Functionality For Import Wizard Mapping
     And user clicks Rx from drug dropdown
     And select 'Rx Count' Rx from drug dropdown
     And user click next button
+    Then user should see import wizard document page
 
 
 

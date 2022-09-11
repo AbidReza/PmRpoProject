@@ -29,55 +29,12 @@ public class ExportPageSteps extends AutomationBase{
     }
 
 
-    @Then("user click all tabs")
-    public void clickNotAvailabletab() throws InterruptedException{
-
-        implementationMPageStep.userClicksAllRolesDropdown();
-        implementationMPageStep.selectRole("NotProcessed");
-        importWizardMapSteps.clickImportButton();
-        importWizardMapSteps.clickBrowseButton();
-        importWizardMapSteps.clickUploadButton();
-        importWizerdMapImportedPage.userselectMapDropdown1();
-        importWizardMapSteps.selectDrugProducName("Product Name");
-        importWizardMapSteps.userClicksDrugMapDropdown2();
-        importWizardMapSteps.selectDrugNdcName("NDC11");
-        importWizardMapSteps.userClicksDrugMapDropdown3();
-        importWizardMapSteps.selectDrugRxName("Rx Count");
-        importWizardMapSteps.userClicksNextButton();
-        importWizerdMapImportedPage.selectDeviceType();
-        clickGncButton();
-        checkDuplicateDrug();
-        clickedConfirmButton();
-        clickedCddbButton();
-        searchDrugName("FACE");
-        clickedPaginationButton();
-        checkDrugNameList();
-        clickedAddButton();
-        clickedOkButton();
-        checkDrugName();
-        userClickRemoveButton();
-        userClickRemoveConfirmButton();
-        userSelectAgainCheckedDrugName();
-        userClickCellLocationDropdown();
-        userClickCellLocationOption();
-        clickPenButton();
-
-        exportPage.userclickedAllTab();
+    @Then("click highest usage drugs button")
+    public void clickHighestUsageDrugButton() throws InterruptedException{
+        exportPage.userClickedHighestUsageDrugButton();
         smartWait.waitUntilPageIsLoaded(15);
     }
 
-
-    @Then("click gnc button")
-    public void clickGncButton() throws InterruptedException{
-        exportPage.userClickedGcnLink();
-        smartWait.waitUntilPageIsLoaded(15);
-    }
-
-    @Then("user click to check duplicate drugs")
-    public void checkDuplicateDrug() throws InterruptedException{
-        exportPage.userCheckedDuplicate();
-        smartWait.waitUntilPageIsLoaded(15);
-    }
 
     @Then("click confirm button")
     public void clickedConfirmButton() throws InterruptedException{
@@ -85,82 +42,24 @@ public class ExportPageSteps extends AutomationBase{
         smartWait.waitUntilPageIsLoaded(15);
     }
 
-    @Then("click cddb button")
-    public void clickedCddbButton() throws InterruptedException{
-        exportPage.userClickedCddbButton();
-        smartWait.waitUntilPageIsLoaded(15);
-    }
 
-    @Then("user enters {string} drug name into the search bar")
-    public void searchDrugName(String drugName) {
-        exportPage.enterSearchDrugName(drugName);
-        smartWait.waitUntilPageIsLoaded(20);
-    }
-    @Then("click pagination button")
-    public void clickedPaginationButton() throws InterruptedException{
-        exportPage.clickPagination();
-        smartWait.waitUntilPageIsLoaded(15);
-    }
 
-    @Then("user checked drug name form list")
-    public void checkDrugNameList() throws InterruptedException{
-        exportPage.userCheckDrugList();
-        smartWait.waitUntilPageIsLoaded(20);
-    }
 
-    @Then("click to add for drug list")
-    public void clickedAddButton() throws InterruptedException{
-        exportPage.userClickedBtnAdd();
-        smartWait.waitUntilPageIsLoaded(15);
-    }
-
-    @Then("click ok button")
-    public void clickedOkButton() throws InterruptedException{
-        exportPage.userClickedBtnOk();
-        smartWait.waitUntilPageIsLoaded(15);
-    }
-
-    @Then("user checked drug name")
-    public void checkDrugName() throws InterruptedException{
-        exportPage.userCheckedDrugName();
-        smartWait.waitUntilPageIsLoaded(20);
-    }
-
-    @Then("user clicked remove button")
-    public void userClickRemoveButton() throws InterruptedException{
-        exportPage.userClickedBtnRemove();
-        smartWait.waitUntilPageIsLoaded(15);
-    }
-
-    @Then("user clicked remove confirm button")
-    public void userClickRemoveConfirmButton() throws InterruptedException{
-        exportPage.userClickedBtnRemoveConfirm();
-        smartWait.waitUntilPageIsLoaded(15);
-    }
-
-    @Then("user select again checked drug name")
-    public void userSelectAgainCheckedDrugName() throws InterruptedException{
-        exportPage.userCheckedDrugNameAgain();
-        smartWait.waitUntilPageIsLoaded(20);
-    }
-
-    @Then("user select cell location dropdown")
-    public void userClickCellLocationDropdown() throws InterruptedException{
-        exportPage.userSelectCellLocationDropdown();
-        smartWait.waitUntilPageIsLoaded(15);
-    }
-
-    @Then("user select cell location option")
-    public void userClickCellLocationOption() throws InterruptedException{
+    @Then("select {string} option")
+    public void selectSubDeviceOption(String arg0) throws InterruptedException {
+        Utility.dropdownCount(openDriver(), ".mat-option>span");
         exportPage.userSelectCallLocationDropDownOption();
         smartWait.waitUntilPageIsLoaded(15);
     }
 
-    @Then("click pen option")
-    public void clickPenButton() throws InterruptedException{
-        exportPage.userClickedBtnPenOption();
-        smartWait.waitUntilPageIsLoaded(15);
-    }
+
+
+
+
+
+
+
+
 
 
 
