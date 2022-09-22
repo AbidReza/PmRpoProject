@@ -6,27 +6,31 @@
   <component name="ChangeListManager">
     <list default="true" id="4fb3192f-47e3-43d8-8e6d-dd06e73fe550" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Runner/ATestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runner/ATestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Runner/BTestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runner/BTestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Runner/CTestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runner/CTestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/parata/base/AutomationBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/parata/base/AutomationBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/parata/pages/ImplementationMPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/parata/pages/ImplementationMPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/parata/steps/CleanupSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/parata/steps/CleanupSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/parata/pages/ExportPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/parata/pages/ExportPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/parata/pages/ImportWizerdMapImportedPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/parata/pages/ImportWizerdMapImportedPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/parata/steps/ImplementationMPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/parata/steps/ImplementationMPageSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/parata/steps/ImportWizerdMapImportedSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/parata/steps/ImportWizerdMapImportedSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/parata/steps/LoginPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/parata/steps/LoginPageSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/Features/ImplementaionMgmt/ExportWizard.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/ImplementaionMgmt/ExportWizard.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/ImplementaionMgmt/ImplementionMgmt.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/ImplementaionMgmt/ImplementionMgmt.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/ImplementaionMgmt/ImportWizerdMapImported.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/ImplementaionMgmt/ImportWizerdMapImported.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/configs/credentials.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/configs/credentials.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Userlogout_fail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/VerifyCellrecommendationsection_fail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Verifycheckdrugname_fail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Verifyimportwizarddocumentpage_fail.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/Verifyimportwizarddocumentpage_fail.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Verifymetrohealthvalleyviewpage_fail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/cucumber-prettya.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber/cucumber-prettya.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-09-08T17-28-58_420-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-09-08T17-28-58_420-jvmRun1.dumpstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-09-08T17-28-58_420.dumpstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-Base Functionality for Implementation Manager.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/taco-ui-testing.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/taco-ui-testing.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/Features/ImplementaionMgmt/ExportWizard.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Features/ImplementaionMgmt/ExportWizard.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Features/ImplementaionMgmt/ImplementionMgmt.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Features/ImplementaionMgmt/ImplementionMgmt.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Features/ImplementaionMgmt/ImportWizerdMapImported.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Features/ImplementaionMgmt/ImportWizerdMapImported.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Runner/BTestRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Runner/BTestRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Runner/CTestRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Runner/CTestRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/parata/pages/ImplementationMPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/parata/pages/ImplementationMPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/parata/steps/CleanupSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/parata/steps/CleanupSteps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/parata/steps/ImplementationMPageSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/parata/steps/ImplementationMPageSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/parata/pages/ExportPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/parata/pages/ExportPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/parata/pages/ImportWizerdMapImportedPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/parata/pages/ImportWizerdMapImportedPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/parata/steps/ImportWizerdMapImportedSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/parata/steps/ImportWizerdMapImportedSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/configs/credentials.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/configs/credentials.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,14 +57,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="D:/qa-stratus-frontend-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\work\PmRpoProject\src\test\resources\Features\ImplementaionMgmt" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: ImportWizerdMapImported">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Verify import wizard document page">
     <configuration name="Feature: ExportWizard" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/ImplementaionMgmt/ExportWizard.feature" />
@@ -99,15 +103,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Upload file and select mapping column" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Verify CDDB  for multiple drugs" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/ImplementaionMgmt/ExportWizard.feature" />
       <option name="GLUE" value="com.parata.steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="PmRpoProject" />
-      <option name="NAME_FILTER" value="^Upload file and select mapping column$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Upload file and select mapping column$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Upload file and select mapping column" />
+      <option name="NAME_FILTER" value="^Verify CDDB  for multiple drugs$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verify CDDB  for multiple drugs$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Verify CDDB  for multiple drugs" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -119,15 +123,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Verify customer list after select project status" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Verify import wizard document page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/ImplementaionMgmt/ExportWizard.feature" />
       <option name="GLUE" value="com.parata.steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="PmRpoProject" />
-      <option name="NAME_FILTER" value="^Verify customer list after select project status$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verify customer list after select project status$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Verify customer list after select project status" />
+      <option name="NAME_FILTER" value="^Verify import wizard document page$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verify import wizard document page$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Verify import wizard document page" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -156,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Verify import wizard document page" />
+        <item itemvalue="Cucumber Java.Scenario: Verify CDDB  for multiple drugs" />
         <item itemvalue="Cucumber Java.Feature: ImportWizerdMapImported" />
         <item itemvalue="Cucumber Java.Feature: ExportWizard" />
         <item itemvalue="JUnit.CTestRunner" />
-        <item itemvalue="Cucumber Java.Scenario: Verify customer list after select project status" />
-        <item itemvalue="Cucumber Java.Scenario: Upload file and select mapping column" />
       </list>
     </recent_temporary>
   </component>

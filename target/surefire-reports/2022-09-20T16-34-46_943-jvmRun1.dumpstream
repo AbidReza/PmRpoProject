@@ -1,4 +1,4 @@
-# Created at 2022-09-08T18:16:39.807
+# Created at 2022-09-20T16:37:11.904
 TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: EXIT
 java.io.EOFException
 	at org.apache.maven.surefire.booter.spi.LegacyMasterProcessChannelDecoder.decode(LegacyMasterProcessChannelDecoder.java:135)

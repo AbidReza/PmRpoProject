@@ -35,13 +35,13 @@ public class ImplementationMPageSteps extends AutomationBase {
         String landingUrl = openDriver().getCurrentUrl();
         System.out.println(landingUrl);
         Assert.assertTrue(landingUrl.contains(url_part));
-        smartWait.waitUntilPageIsLoaded(15);
+        smartWait.waitUntilPageIsLoaded(20);
     }
 
     @When("user clicks Project Status dropdown")
     public void userClicksAllRolesDropdown() throws InterruptedException {
          implementationMPage.userclickedAllStatus();
-         smartWait.waitUntilPageIsLoaded(15);
+         smartWait.waitUntilPageIsLoaded(25);
          System.out.println("Open dropdown list of project status");
     }
 
@@ -49,7 +49,7 @@ public class ImplementationMPageSteps extends AutomationBase {
     public void selectRole(String arg0) throws InterruptedException {
         Utility.dropdownCount(openDriver(), ".mat-option>span");
         implementationMPage.selectBtnImplementationManager();
-        smartWait.waitUntilPageIsLoaded(15);
+        smartWait.waitUntilPageIsLoaded(30);
         System.out.println("Select  Not processed project status");
     }
 

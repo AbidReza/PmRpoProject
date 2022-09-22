@@ -1,6 +1,6 @@
-# Created at 2022-09-08T18:16:39.817
+# Created at 2022-09-20T16:37:11.913
 Exiting self fork JVM. Received SHUTDOWN command from Maven shutdown hook.
-Thread dump before exiting the process (12888@DESKTOP-BFEAADD):
+Thread dump before exiting the process (16668@DESKTOP-BFEAADD):
 "main" 
    java.lang.Thread.State: WAITING
         at java.base@11.0.15/jdk.internal.misc.Unsafe.park(Native Method)
@@ -88,51 +88,21 @@ Thread dump before exiting the process (12888@DESKTOP-BFEAADD):
         at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:388)
         at java.base@11.0.15/java.lang.Thread.run(Thread.java:834)
 
-"Forwarding findElement on session 187c1b3708499616dc9f54c29de6d942 to remote" 
-   java.lang.Thread.State: RUNNABLE
-        at java.base@11.0.15/java.net.SocketInputStream.socketRead0(Native Method)
-        at java.base@11.0.15/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
-        at java.base@11.0.15/java.net.SocketInputStream.read(SocketInputStream.java:168)
-        at java.base@11.0.15/java.net.SocketInputStream.read(SocketInputStream.java:140)
-        at app//okio.Okio$2.read(Okio.java:140)
-        at app//okio.AsyncTimeout$2.read(AsyncTimeout.java:237)
-        at app//okio.RealBufferedSource.indexOf(RealBufferedSource.java:355)
-        at app//okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:227)
-        at app//okhttp3.internal.http1.Http1Codec.readHeaderLine(Http1Codec.java:215)
-        at app//okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:189)
-        at app//okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)
-        at app//okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-        at app//okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-        at app//org.openqa.selenium.remote.internal.OkHttpClient$Factory$1.lambda$createClient$1(OkHttpClient.java:152)
-        at app//org.openqa.selenium.remote.internal.OkHttpClient$Factory$1$$Lambda$305/0x00000001002ff840.intercept(Unknown Source)
-        at app//okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-        at app//okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
-        at app//okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-        at app//okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-        at app//okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-        at app//okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-        at app//okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-        at app//okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-        at app//okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-        at app//okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-        at app//okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-        at app//okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-        at app//okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-        at app//okhttp3.RealCall.execute(RealCall.java:77)
-        at app//org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
-        at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
-        at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-        at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-        at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-        at app//org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-        at app//org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-        at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-        at app//org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-        at app//org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-        at app//com.sun.proxy.$Proxy20.toString(Unknown Source)
-        at java.base@11.0.15/java.lang.String.valueOf(String.java:2951)
-        at java.base@11.0.15/java.lang.StringBuilder.append(StringBuilder.java:173)
-        at app//com.parata.utils.CommonPageMethods.click(CommonPageMethods.java:27)
+"pool-2-thread-1" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@11.0.15/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@11.0.15/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+        at java.base@11.0.15/java.util.concurrent.FutureTask.awaitDone(FutureTask.java:444)
+        at java.base@11.0.15/java.util.concurrent.FutureTask.get(FutureTask.java:203)
+        at app//org.awaitility.core.Uninterruptibles.getUninterruptibly(Uninterruptibles.java:101)
+        at app//org.awaitility.core.Uninterruptibles.getUninterruptibly(Uninterruptibles.java:81)
+        at app//org.awaitility.core.ConditionAwaiter.await(ConditionAwaiter.java:94)
+        at app//org.awaitility.core.AssertionCondition.await(AssertionCondition.java:119)
+        at app//org.awaitility.core.AssertionCondition.await(AssertionCondition.java:31)
+        at app//org.awaitility.core.ConditionFactory.until(ConditionFactory.java:873)
+        at app//org.awaitility.core.ConditionFactory.untilAsserted(ConditionFactory.java:657)
+        at app//com.parata.utils.SmartWait.awaitUntilPageIsLoaded(SmartWait.java:61)
+        at app//com.parata.utils.CommonPageMethods.click(CommonPageMethods.java:24)
         at app//com.parata.pages.LoginPage.clickMainLoginButton(LoginPage.java:80)
         at app//com.parata.steps.LoginPageSteps.userLoggedInTacoUIWithCredentials(LoginPageSteps.java:49)
         at java.base@11.0.15/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -194,7 +164,7 @@ Thread dump before exiting the process (12888@DESKTOP-BFEAADD):
         at app//okio.AsyncTimeout.awaitTimeout(AsyncTimeout.java:361)
         at app//okio.AsyncTimeout$Watchdog.run(AsyncTimeout.java:312)
 
-"UrlChecker-14" 
+"UrlChecker-3" 
    java.lang.Thread.State: TIMED_WAITING
         at java.base@11.0.15/jdk.internal.misc.Unsafe.park(Native Method)
         at java.base@11.0.15/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
@@ -260,19 +230,52 @@ Thread dump before exiting the process (12888@DESKTOP-BFEAADD):
         at app//org.apache.commons.exec.StreamPumper.run(StreamPumper.java:107)
         at java.base@11.0.15/java.lang.Thread.run(Thread.java:834)
 
-"ForkJoinPool.commonPool-worker-31" 
-   java.lang.Thread.State: TIMED_WAITING
-        at java.base@11.0.15/jdk.internal.misc.Unsafe.park(Native Method)
-        at java.base@11.0.15/java.util.concurrent.locks.LockSupport.parkUntil(LockSupport.java:275)
-        at java.base@11.0.15/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1619)
-        at java.base@11.0.15/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
-
-"ForkJoinPool.commonPool-worker-17" 
-   java.lang.Thread.State: WAITING
-        at java.base@11.0.15/jdk.internal.misc.Unsafe.park(Native Method)
-        at java.base@11.0.15/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
-        at java.base@11.0.15/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1628)
-        at java.base@11.0.15/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+"Forwarding executeScript on session e658b4dbf381f35d95a7fbcdfd56f813 to remote" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@11.0.15/java.net.SocketInputStream.socketRead0(Native Method)
+        at java.base@11.0.15/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+        at java.base@11.0.15/java.net.SocketInputStream.read(SocketInputStream.java:168)
+        at java.base@11.0.15/java.net.SocketInputStream.read(SocketInputStream.java:140)
+        at app//okio.Okio$2.read(Okio.java:140)
+        at app//okio.AsyncTimeout$2.read(AsyncTimeout.java:237)
+        at app//okio.RealBufferedSource.indexOf(RealBufferedSource.java:355)
+        at app//okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:227)
+        at app//okhttp3.internal.http1.Http1Codec.readHeaderLine(Http1Codec.java:215)
+        at app//okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:189)
+        at app//okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)
+        at app//okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+        at app//okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+        at app//org.openqa.selenium.remote.internal.OkHttpClient$Factory$1.lambda$createClient$1(OkHttpClient.java:152)
+        at app//org.openqa.selenium.remote.internal.OkHttpClient$Factory$1$$Lambda$325/0x0000000100365440.intercept(Unknown Source)
+        at app//okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+        at app//okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
+        at app//okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+        at app//okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+        at app//okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+        at app//okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+        at app//okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+        at app//okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+        at app//okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+        at app//okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+        at app//okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+        at app//okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+        at app//okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+        at app//okhttp3.RealCall.execute(RealCall.java:77)
+        at app//org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+        at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
+        at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+        at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+        at app//org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+        at app//com.parata.utils.SmartWait.lambda$awaitUntilPageIsLoaded$0(SmartWait.java:61)
+        at app//com.parata.utils.SmartWait$$Lambda$533/0x0000000100448440.run(Unknown Source)
+        at app//org.awaitility.core.AssertionCondition.lambda$new$0(AssertionCondition.java:53)
+        at app//org.awaitility.core.AssertionCondition$$Lambda$537/0x0000000100449440.eval(Unknown Source)
+        at app//org.awaitility.core.ConditionAwaiter$ConditionPoller.call(ConditionAwaiter.java:203)
+        at app//org.awaitility.core.ConditionAwaiter$ConditionPoller.call(ConditionAwaiter.java:190)
+        at java.base@11.0.15/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+        at java.base@11.0.15/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+        at java.base@11.0.15/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+        at java.base@11.0.15/java.lang.Thread.run(Thread.java:834)
 
 
 

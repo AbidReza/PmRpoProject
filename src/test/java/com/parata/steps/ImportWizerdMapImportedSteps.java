@@ -156,6 +156,7 @@ public class ImportWizerdMapImportedSteps extends AutomationBase {
         selectDrugNdcName("NDC11");
         userClicksDrugMapDropdown3();
         selectDrugRxName("Rx Count");
+        userCheckNOUsage();
         userClicksNextButton();
         userWillSeeImportWizard();
 
@@ -176,10 +177,10 @@ public class ImportWizerdMapImportedSteps extends AutomationBase {
         smartWait.waitUntilPageIsLoaded(15);
     }
 
-    @Then("user checked exclude button")
+    @And("user checked exclude button")
     public void userCheckdExcludeDrugButton() throws InterruptedException {
         importWizerdMapImportedPage.chkExcludeDrug();
-        smartWait.waitUntilPageIsLoaded(15);
+//        smartWait.waitUntilPageIsLoaded(15);
     }
 
     @Then("user checked exclude schedule button")
@@ -228,33 +229,64 @@ public class ImportWizerdMapImportedSteps extends AutomationBase {
         smartWait.waitUntilPageIsLoaded(10);
     }
 
-    @When("user select sub device type dropdown")
+    @And("user select sub device type dropdown")
     public void userShouldSelectSubDeviceType() throws InterruptedException {
-        implementationMPageStep.userClicksAllRolesDropdown();
-        implementationMPageStep.selectRole("NotProcessed");
-        implementationMPageStep.userShouldSeeCustomerList();
-        clickImportButton();
-        clickBrowseButton();
-        clickUploadButton();
-        userShouldSeeSuccessfulUploadedMessage();
-        importWizerdMapImportedPage.userselectMapDropdown1();
-        selectDrugProducName("Product Name");
-        userClicksDrugMapDropdown2();
-        selectDrugNdcName("NDC11");
-        userClicksDrugMapDropdown3();
-        selectDrugRxName("Rx Count");
-        userClicksNextButton();
-        userWillSeeImportWizard();
-        importWizerdMapImportedPage.selectDeviceType();
-        selectDeviceOption1("Max 2");
-        userCheckdExcludeDrugButton();
-        userCheckedExcludeUsage();
-        clickAnalyzeButton();
-        userWillSeeCellRecommendation();
         importWizerdMapImportedPage.selectSubDeviceType();
         smartWait.waitUntilPageIsLoaded(10);
     }
 
+    @And("user select {string} sub device option")
+    public void selectSubDeviceOption(String arg0) throws InterruptedException {
+        Utility.dropdownCount(openDriver(), ".mat-option>span");
+        importWizerdMapImportedPage.selectSubDeviceOption();
+        smartWait.waitUntilPageIsLoaded(15);
+    }
+
+
+    @And("user select day of use dropdown")
+    public void userSelectDayOfUseDropDown() throws InterruptedException {
+        importWizerdMapImportedPage.selectDayOfUseDropDown();
+        smartWait.waitUntilPageIsLoaded(10);
+    }
+
+    @And("user select {string} day of use option")
+    public void selectDayOfUseOption(String arg0) throws InterruptedException {
+        Utility.dropdownCount(openDriver(), ".mat-option>span");
+        importWizerdMapImportedPage.selectDayOfUseOption();
+        smartWait.waitUntilPageIsLoaded(15);
+    }
+
+
+
+
+
+
+//    @When("user select sub device type dropdown")
+//    public void userShouldSelectSubDeviceType() throws InterruptedException {
+//        implementationMPageStep.userClicksAllRolesDropdown();
+//        implementationMPageStep.selectRole("NotProcessed");
+//        implementationMPageStep.userShouldSeeCustomerList();
+//        clickImportButton();
+//        clickBrowseButton();
+//        clickUploadButton();
+//        userShouldSeeSuccessfulUploadedMessage();
+//        importWizerdMapImportedPage.userselectMapDropdown1();
+//        selectDrugProducName("Product Name");
+//        userClicksDrugMapDropdown2();
+//        selectDrugNdcName("NDC11");
+//        userClicksDrugMapDropdown3();
+//        selectDrugRxName("Rx Count");
+//        userClicksNextButton();
+//        userWillSeeImportWizard();
+//        importWizerdMapImportedPage.selectDeviceType();
+//        selectDeviceOption1("Max 2");
+//        userCheckdExcludeDrugButton();
+//        userCheckedExcludeUsage();
+//        clickAnalyzeButton();
+//        userWillSeeCellRecommendation();
+//        importWizerdMapImportedPage.selectSubDeviceType();
+//        smartWait.waitUntilPageIsLoaded(10);
+//    }
 
 
 
@@ -450,6 +482,32 @@ public class ImportWizerdMapImportedSteps extends AutomationBase {
         exportPage.enterSearchDrugName(drugName);
         smartWait.waitUntilPageIsLoaded(20);
     }
+
+    @And("user should input {string} minimum days supply")
+    public void userShouldInputMinimumDaysSupply(String days) {
+        importWizerdMapImportedPage.inputMinimumDays(days);
+        smartWait.waitUntilPageIsLoaded(20);
+    }
+
+    @And("user should input {string} high cap drawer")
+    public void userShouldInputHighCapDrawer(String HCapD) {
+        importWizerdMapImportedPage.inputHighCapDrawer(HCapD);
+        smartWait.waitUntilPageIsLoaded(20);
+    }
+
+    @And("user should input {string} smart cap drawer")
+    public void userShouldInputSmartCapDrawer(String SCapD) {
+        importWizerdMapImportedPage.inputSmartDrawer(SCapD);
+        smartWait.waitUntilPageIsLoaded(20);
+    }
+
+    @And("user should input {string} days of use")
+    public void userShouldInputDayOfUse(String dayuse) {
+        importWizerdMapImportedPage.inputDaysUse(dayuse);
+        smartWait.waitUntilPageIsLoaded(20);
+    }
+
+
     @Then("user checked drug name form list")
     public void checkDrugNameList() throws InterruptedException{
         exportPage.userCheckDrugList();
@@ -474,12 +532,7 @@ public class ImportWizerdMapImportedSteps extends AutomationBase {
         smartWait.waitUntilPageIsLoaded(15);
     }
 
-    @Then("user select {string} sub device option")
-    public void selectSubDeviceOption(String arg0) throws InterruptedException {
-        Utility.dropdownCount(openDriver(), ".mat-option>span");
-        importWizerdMapImportedPage.selectSubDeviceOption();
-        smartWait.waitUntilPageIsLoaded(15);
-    }
+
 
     @Then("user click wizard import button")
     public void clickWizardImportButton() throws InterruptedException{

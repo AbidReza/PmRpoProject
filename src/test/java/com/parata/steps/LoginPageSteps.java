@@ -52,7 +52,7 @@ public class LoginPageSteps extends AutomationBase{
             loginPage.typePasswordInternal(password);
             loginPage.clickSignInButton();
             loginPage.clickSignInButton();
-            smartWait.waitUntilPageIsLoaded(20);
+            smartWait.waitUntilPageIsLoaded(30);
         } else {
             System.out.println("Running external login steps");
             launcher.navigateToParataApplication();

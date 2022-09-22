@@ -118,15 +118,16 @@ public class ExportPage extends CommonPageMethods{
     @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-cddb/div/div/mat-dialog-content/div[1]/div/div/input"))
     public WebElement searchDrugInput;
 
-    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-cddb/div/mat-dialog-actions/div[1]/mat-paginator/div/div/div[2]/button[2]/span[1]"))
+
+
+
+
+
+    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-cddb/div/mat-dialog-actions/div[1]/mat-paginator/div/div/div[2]/button[2]"))
     public WebElement btnPagination;
 
     @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-cddb/div/div/mat-dialog-content/div[2]/table[1]/tbody/tr[1]/td[1]/mat-checkbox/label/span[1]"))
     public WebElement chkName;
-
-
-
-
 
     @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard-cddb/div/div/mat-dialog-content/div[1]/button"))
     public WebElement btnAddToDrugList;
@@ -237,6 +238,9 @@ public class ExportPage extends CommonPageMethods{
     public void enterSearchDrugName(String drugName) {
         searchDrugInput.sendKeys(drugName);
     }
+
+
+
 
     public void clickPagination()throws  InterruptedException {
         click(btnPagination);

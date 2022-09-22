@@ -57,13 +57,13 @@ public class ImportWizerdMapImportedPage extends CommonPageMethods{
     @FindBy(how = How.XPATH, using = ("//*[@id=\"mat-select-16\"]"))
     public WebElement dropdownDeviceType;
 
-    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[4]/div/div/div/mat-option[1]"))
+    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[4]/div/div/div/mat-option[3]"))
     public WebElement btnOption1;
 
     @FindBy(how = How.ID, using = ("mat-radio-2"))
     public WebElement btnRadioStandrad;
 
-    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard/div/div/form/div/mat-dialog-content/div[2]/div[1]/div/mat-checkbox/label/span[1]"))
+    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard/div/div/form/div/mat-dialog-content/div[3]/div[1]/div/mat-checkbox/label/span[1]"))
     public WebElement btnChkExcludeDrug;
 
     @FindBy(how = How.XPATH, using = ("//*[@id=\"mat-checkbox-2\"]/label/span[1]"))
@@ -79,7 +79,7 @@ public class ImportWizerdMapImportedPage extends CommonPageMethods{
     @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard/div/div/form/div/mat-dialog-content/div[2]/div[3]/div[1]/mat-checkbox/label/span[1]"))
     public WebElement btnChkExcludeSchedule2;
 
-    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard/div/div/form/div/mat-dialog-content/div[2]/div[4]/div[1]/mat-checkbox/label/span[1]"))
+    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard/div/div/form/div/mat-dialog-content/div[3]/div[4]/div[1]/mat-checkbox/label/span[1]"))
     public WebElement btnChkExcludeUsage;
 
     @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard/div/div/form/div/mat-dialog-content/div[2]/div[3]/div[2]/mat-checkbox[1]/label/span[1]"))
@@ -88,12 +88,17 @@ public class ImportWizerdMapImportedPage extends CommonPageMethods{
     @FindBy(how=How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard/div/div/form/div/mat-dialog-content/div[3]/div[1]/button"))
     public WebElement btnAnalyze;
 
-
-    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard/div/div/form/div/mat-dialog-content/div[3]/div[3]/mat-form-field/div/div[1]/div/mat-select"))
+    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard/div/div/form/div/mat-dialog-content/div[2]/mat-form-field/div/div[1]/div/mat-select"))
     public WebElement dropdownSubDevice;
 
-    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[4]/div/div/div/mat-option[5]"))
+    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[4]/div/div/div/mat-option[1]"))
     public WebElement btnFullMainFold;
+
+    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[2]/div/mat-dialog-container/app-import-wizard/div/div/form/div/mat-dialog-content/div[3]/div[7]/div[1]/mat-form-field/div/div[1]/div/mat-select"))
+    public WebElement dropdownDayOfUse;
+
+    @FindBy(how = How.XPATH, using = ("/html/body/div[3]/div[4]/div/div/div/mat-option[7]"))
+    public WebElement btnDayOfUse;
 
     @FindBy(how=How.XPATH, using = ("//*[@id=\"import\"]"))
     public WebElement btnWizardImport;
@@ -121,7 +126,18 @@ public class ImportWizerdMapImportedPage extends CommonPageMethods{
 
     @FindBy(how = How.XPATH, using = ("/html/body/app-root/div/ng-sidebar-container/div/div/div/header/app-header/mat-toolbar/div[2]/div/div/mat-card-actions/button"))
     public WebElement loginButton;
-    //
+
+    @FindBy(how = How.XPATH, using = ("//*[@id=\"mat-dialog-0\"]/app-import-wizard/div/div/form/div/mat-dialog-content/div[3]/div[6]/div[1]/input"))
+    public WebElement inputMinimumDays;
+
+    @FindBy(how = How.XPATH, using = ("//*[@id=\"mat-dialog-0\"]/app-import-wizard/div/div/form/div/mat-dialog-content/div[3]/div[6]/div[2]/input"))
+    public WebElement highCapDrawer;
+
+    @FindBy(how = How.XPATH, using = ("//*[@id=\"mat-dialog-0\"]/app-import-wizard/div/div/form/div/mat-dialog-content/div[3]/div[6]/div[3]/input"))
+    public WebElement smartDrawer;
+
+    @FindBy(how = How.XPATH, using = ("//*[@id=\"mat-dialog-0\"]/app-import-wizard/div/div/form/div/mat-dialog-content/div[3]/div[6]/div[4]/input"))
+    public WebElement inputDaysOfUse;
 
 
 
@@ -179,15 +195,6 @@ public class ImportWizerdMapImportedPage extends CommonPageMethods{
     }
 
 
-
-//    public void btnRadioUnitUsage() throws InterruptedException {
-//        click(rbtUnitUsage1);
-//    }
-//
-//    public void btnRadioNumberOfOrder() throws InterruptedException {
-//        click(rbtNumberOrder1);
-//    }
-
     public void userclickedNextButton() throws InterruptedException {
         click(btnNext);
     }
@@ -241,6 +248,14 @@ public class ImportWizerdMapImportedPage extends CommonPageMethods{
         click(btnFullMainFold);
     }
 
+    public void selectDayOfUseDropDown() throws InterruptedException {
+        click(dropdownDayOfUse);
+    }
+
+    public void selectDayOfUseOption() throws InterruptedException {
+        click(btnDayOfUse);
+    }
+
     public void userclickedWizardImportButton() throws InterruptedException {
         click(btnWizardImport);
     }
@@ -278,4 +293,21 @@ public class ImportWizerdMapImportedPage extends CommonPageMethods{
     }
 
 
+    public void inputMinimumDays(String days) {
+        inputMinimumDays.clear();
+        inputMinimumDays.sendKeys(days);
+    }
+    public void inputHighCapDrawer(String hdrawer) {
+        highCapDrawer.clear();
+        highCapDrawer.sendKeys(hdrawer);
+    }
+
+    public void inputSmartDrawer(String sdrawer) {
+        smartDrawer.clear();
+        smartDrawer.sendKeys(sdrawer);
+    }
+    public void inputDaysUse(String daysuse) {
+        inputDaysOfUse.clear();
+        inputDaysOfUse.sendKeys(daysuse);
+    }
 }
